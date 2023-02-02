@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+    header{
+        height: 140px;
+        background-color: rgb(255, 255, 255);
+
+        .profileImage{
+
+            position: absolute;
+            width: 53px;
+            height: 50px;
+            left: 248px;
+            top: 62px;
+            border-radius: 30px;
+            // background: url(IMG_2738);
+        }
+
+
+        .titleIdentity{
+
+            position: absolute;
+            width: 118px;
+            height: 19px;
+            left: 313px;
+            top: 78px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: #000000;
+        }
+        
+        .linkStyles{
+
+            position: absolute;
+            height: 19px;
+            top: 78px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: #000000;
+            text-decoration: none;
+
+        }
+
+        .firstLink{
+
+            width: 49px;
+            left: 761px;   
+        }
+
+        .secondLink{
+
+            width: 62px;
+            left: 888px;
+        }
+
+        .thirdLink{
+
+            width: 62px;
+            left: 1015px;
+        }
+
+        .fourthLink{
+    
+            width: 70px;
+            left: 1144px;
+        }
+
+        .fifthLink{
+        
+            width: 79px;
+            left: 1267px;
+        }
+
+
+        .socialMedia{
+
+            position: absolute;
+            width: 293px;
+            height: 72px;
+            left: 1501px;
+            top: 71px;
+
+            .github{
+
+                position: absolute;
+                left: 0%;
+                right: 88.4%;
+                top: 0%;
+                bottom: 0%;
+                width: 34px;
+                height: 32px;
+                background-color: blue;
+            }
+
+            .linkdin{
+                position: absolute;
+                left: 24.91%;
+                right: 63.14%;
+                top: 0%;
+                bottom: 0%;
+                width: 35px;
+                height: 32px;
+            }
+
+            .twitter{
+
+                position: absolute;
+                left: 48.46%;
+                right: 38.91%;
+                top: 0%;
+                bottom: 0%;
+                width: 37px;
+                height: 32px;
+            }
+
+            .moon{
+
+                position: absolute;
+                left: 220px;
+                right: 0%;
+                top: 0%;
+                width: 40px;
+                height: 32px;
+
+            }
+
+        }
+
+
+    }
+
+    .mainContainer{
+
+        height: 800px;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+
+        .mainTitle{
+
+            position: absolute;
+            width: 266px;
+            height: 44px;
+            left: 764px;
+            top: 251px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 36px;
+            line-height: 44px;
+        }
+
+        .paragraph{
+
+            position: absolute;
+            width: 765px;
+            height: 72px;
+            left: 765px;
+            top: 362px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+
+        }
+        .contact{
+
+            position: absolute;
+            width: 114px;
+            height: 20px;
+            left: 765px;
+            top: 479px;
+            color: white;
+            text-decoration: none;
+            background-color: rgb(6, 6, 6);
+        }
+
+        .nextWritings{
+
+            position: absolute;
+            width: 110px;
+            height: 24px;
+            left: 769px;
+            top: 663px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 24px;
+
+            color: #000000;
+        }
+
+        .bookTitle{
+
+            position: absolute;
+            width: 242px;
+            height: 77px;
+            left: 764px;
+            top: 724px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 200;
+            font-size: 26px;
+            line-height: 44px;
+
+            span{
+
+            font-weight: 100;
+            font-size: 16px;
+
+            }
+        }
+
+        .writingLink{
+
+            position: absolute;
+            width: 138px;
+            height: 24px;
+            left: 766px;
+            top: 864px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+            text-decoration-line: underline;
+
+            color: #000000;
+        }
+
+
+    }
+
+    .footer{
+
+        height: 180px;
+        background-color: rgb(255, 255, 255);
+
+        .footerParagraph{
+
+            position: absolute;
+            width: 513px;
+            height: 24px;
+            left: 763px;
+            top: 1001px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+            color: #8D1212;
+            border-top: #000000 1px solid;
+
+        }
+            
+    }

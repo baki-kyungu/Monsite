@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.mainBlock{
+
+    position: relative;
+    width: 1984px;
+    height: 1136px;
+    background: #FFFFFF;
+
+    header{
+        height: 140px;
+        background-color: rgb(184, 184, 184);
+
+        .profileImage{
+
+            position: absolute;
+            width: 53px;
+            height: 50px;
+            left: 248px;
+            top: 62px;
+            border-radius: 30px;
+        }
+
+
+        .titleIdentity{
+
+            // width: 112px;
+            // height: 19px;
+            // left: 313px;
+            // top: 78px;
+
+            // font-family: 'Inter';
+            // font-style: normal;
+            // font-weight: 400;
+            // font-size: 16px;
+            // line-height: 19px;
+
+            // color: #000000;
+        
+        }
+
+        .firstLink{
+
+            width: 49px;
+            left: 761px;
+        }
+
+        .secondLink{
+
+            width: 62px;
+            left: 888px;
+        }
+
+        .thirdLink{
+            
+            width: 62px;
+            left: 1015px;
+        }
+
+        .fourthLink{
+
+            width: 70px;
+            left: 1144px;
+        }
+
+        .fifthLink{
+            
+            width: 79px;
+            left: 1267px;
+            
+        }
+        .linkStyles{
+
+            position: absolute;
+            height: 19px;
+            top: 78px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: #000000;
+
+        }
+
+        .contact{
+            
+        }
+    }
+}
