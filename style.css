@@ -75,14 +75,13 @@ header .socialMedia .github {
   bottom: 0%;
   width: 34px;
   height: 32px;
-  background-color: blue;
 }
 header .socialMedia .linkdin {
   position: absolute;
   left: 24.91%;
   right: 63.14%;
   top: 0%;
-  bottom: 0%;
+  bottom: 0, 2%;
   width: 35px;
   height: 32px;
 }
@@ -92,8 +91,8 @@ header .socialMedia .twitter {
   right: 38.91%;
   top: 0%;
   bottom: 0%;
-  width: 35px;
-  height: 32px;
+  width: 40px;
+  height: 38px;
 }
 header .socialMedia .moon {
   position: absolute;
@@ -102,6 +101,7 @@ header .socialMedia .moon {
   top: 0%;
   width: 40px;
   height: 32px;
+  background-color: #000000;
 }
 
 .mainContainer {

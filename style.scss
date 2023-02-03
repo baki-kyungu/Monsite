@@ -98,7 +98,7 @@
                 bottom: 0%;
                 width: 34px;
                 height: 32px;
-                background-color: blue;
+        
             }
 
             .linkdin{
@@ -106,7 +106,7 @@
                 left: 24.91%;
                 right: 63.14%;
                 top: 0%;
-                bottom: 0%;
+                bottom: 0,2%;
                 width: 35px;
                 height: 32px;
             }
@@ -118,8 +118,8 @@
                 right: 38.91%;
                 top: 0%;
                 bottom: 0%;
-                width: 35px;
-                height: 32px;
+                width: 40px;
+                height: 38px;
             }
 
             .moon{
@@ -130,6 +130,7 @@
                 top: 0%;
                 width: 40px;
                 height: 32px;
+                background-color: #000000;
 
             }
 
@@ -143,6 +144,7 @@
         height: 800px;
         width: 100%;
         background-color: rgb(255, 255, 255);
+        
 
         .mainTitle{
 
@@ -260,6 +262,7 @@
             line-height: 24px;
             color: #8D1212;
             border-top: #000000 1px solid;
+            
 
         }
             
