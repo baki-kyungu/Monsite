@@ -1,57 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>bakikyungu</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>bakikyungu</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="./script.js" defer></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@800&family=Open+Sans:wght@700&family=Oswald:wght@700&family=Sora:wght@800&family=Space+Grotesk:wght@500&family=Teko:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    </head>
+
+    <body>
 
 
-        <header>
+        <header class="header">
 
-            <img class="profileImage" src="image/profileImage.jpg" alt="">
-            <h1 class="titleIdentity">BAKI-KYUNGU</h1>
+            <nav class="nav container">
 
-    
-            <a class="firstLink linkStyles" href="">Home</a>
-            <a class="secondLink linkStyles" href="">Writigns</a>
-            <a class="thirdLink linkStyles" href="">Projects</a>
-            <a class="fourthLink linkStyles" href="">Readings</a>
-            <a class="fifthLink linkStyles" href="">Speakings</a>
+                <a class="nav__logo" href="#portofolio">
+                    <i class="uil uil-arrow"></i> My porto <span class="redpart">folio</span> 
+                </a>
 
-            <div class="socialMedia">
-                <a target="_blank" href="https://github.com/baki-kyungu/"><img class="github" src="https://www.pngall.com/wp-content/uploads/2016/04/Github-PNG-Image.png" alt="" /></a>
-                <a target="_blank" href="https://www.linkedin.com/feed/"><img class="linkdin" src="https://www.fnogec.org/communication/documents/linkedin.png/image" alt="" /></a>
-                <a target="_blank" href=""><img class="twitter" src="https://i.pinimg.com/originals/6e/b6/da/6eb6da0895fb9bc331fc335ad46871a2.png" alt="" /></a>
-                <a target="_blank" href=""><img class="moon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGW6VOvKgdt-vtxFHS81RCWvhd_c1Joax5AJFuRu7xCUZzYIMbjw63N5fYeraQNCagY8Q&usqp=CAU" alt="" /></a>
-            </div>     
-    
+                <div class="nav__menu" id="nav__menu">
+
+                    <ul class="nav__list grid">
+                        <li class="nav__item">
+                            <a class="nav__link" href="#home">
+                                <i class="uil uil-estate"></i> Home
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a class="nav__link" href="#about">
+                                <i class="uil uil-user"></i> About
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a class="nav__link" href="#skills">  
+                                <i class="uil uil-file-info-alt"></i> Skills
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#projects">
+                                <i class="uil uil-briefcase-alt"></i> Projects
+                            </a>
+                        </li>
+                       
+                        
+                    </ul>
+
+                </div>  
+                
+                <div class="nav__btns">
+
+                    <a class="nav__link" href="#youtube">  
+                        <i class="uil uil-youtube"></i>
+                    </a>
+
+                    <a class="nav__link" href="#in">  
+                        <i class="uil uil-linkedin-alt"></i>
+                    </a>
+                </div>
+        
+            </nav>
+
         </header>
 
-        <main class="mainContainer">
 
-            <h1 class="mainTitle">BAKI KYUNGU</h1>
+        <!-- ===========================================Main=============================================== -->
 
-            <p class="paragraph">
-                I'm a Co-Founder at Oxford English Center and currently learning coding.
-                My passions are Computer Science, Networks, Education, Science & Technology,
-                and Social and Personal Development.
-            </p>
+        <main class="main">
 
-            <a class="contact" href=""> Contact Me > </a>
-            <p class="nextWritings">Next Book</p>
-            <p class="bookTitle">Take it ('s) easy <br><span>May 06 2023</span></p>
-            <a class="writingLink" href="">All writing→ </a>
+        <!-- ===========================================Home======================================================= -->
+            <section class="home section">
+
+                        <div class="home__data">
+                            <h2 class="home__title">Hi, my name is</h2>
+                            <h1 class="home__subtitle">Baki <span class="home__subtitle-span"> Kyungu</span></h1>
+                            <p class="home__description">I'm a Co-Founder at <a class="home__link-span" href="http://">Oxford English Center</a>  and currently learning coding.
+                                My passions are Computer Science, Networks, Education, Science & Technology,
+                                and Social and Personal Development.
+                            </p>
+
+                            <a href="#contact" class="button button--flex">
+                                Contact Me <i class="uil uil-message button--icon" ></i> 
+                            </a>
+                        </div>
+
+                        <div class="home__img">
+
+                            <img src="image/my-profile.jpeg" alt="">
+
+                        </div>
+
+                        <!-- <div class="home__scroll">
+                            <a href="#about" class="home__scroll-button button--flex">
+                                <i class="uil uil-mouse home__scroll-mouse"></i>
+                                <span class="home__scroll-name">Scroll down</span>
+                                <i class="uil uil-arrow-down home__scoll-arrow"></i>
+                            </a>
+
+                        </div> -->
+
+            </section>
+
+            <section class="about section">
+
+                <h1 class="about__title">Développeur Web et Web Mobile</h1>
+
+                <div class="description__paragraph">
+
+                    <div class="description__flex">
+
+                        <div class="my-description-title">
+
+                            <p class="description-title">
+                                Je suis UI/Ux designer, développeur web et web mobile,compétent 
+                                et créatif je fais aussi la gestion des projets agiles avec scrum et taille de t-shirt.
+                                voici la liste de ce que je connais :
+                            </p>
+
+                            <ul class="description-ul">
+                                <li>HTML, CSS & JavaScript</li>
+                                <li>UI & UX</li>
+                                <li>Structure des Données & Algorithmes</li>
+                                <li>React.js</li>   
+                            </ul>
+
+                        </div>
+
+                        <div class="my-description-list">
+
+                            <ul>
+                              
+                                <li>React.js</li>
+                                <li>Node.js & Express</li>
+                                <li>Testing</li>
+                                <li>SQL & MongoDB</li>
+                                <li>Gestion des projets agile</li>
+                                
+                            </ul>
+                            
+                        </div>
+
+                    </div>
+
+                </div>
+                
+            </section>
+
+            <section class="skills section">
+
+                <div class="skills__information-flex">
+
+                    <div class="skills__description">
+
+                        <div class="skills__titles">
+
+                            <h3 class="skills__title">
+                                My skills
+                            </h3>
+    
+                            <h4 class="skills__subtitle-first">
+                                Développement front-end
+                            </h4>
+
+                        </div>
+
+                        <div class="skills__list-front-end">
+
+                            <ul>
+                                <li>Création des interfaces utilisateur web statiques et responsives</li>
+                                <li>Création des interfaces utilisateur web dynamiques et responsives</li>
+                                <li>Introduction aux SPA</li>
+                                <li>Création des interfaces utilisateur web riches avec Reactjs</li>
+                                <li>Déploiement d'une application web</li>
+                            </ul>
+
+                        </div>
+
+                        <div class="skills__titles">
+
+                            <h4 class="skills__subtitle-first">
+                                Développement back-end
+                            </h4>
+
+                        </div>
+
+                        <div class="skills__list-front-end">
+
+                            <ul>
+                                <li>Conception et création des bases de données</li>
+                                <li>Les bases de la programmation web coté serveur</li>
+                                <li>Développement de la partie back-end d'une application web avec Nodejs </li>
+                                <li>Création des Web Services avec Nodejs</li>
+                            </ul>
+
+                        </div>
+
+                        <div class="skills__titles">
+
+                            <h4 class="skills__subtitle-first">
+                                Concepts Avancés
+                            </h4>
+
+                        </div>
+
+                        <div class="skills__list-front-end">
+
+                            <ul>
+                                <li>Assurance qualité</li>
+                                <li>Structures des données et Algorithmes</li>
+                                <li>Design patterns et Architectures des applications web</li>
+                                <li>DevOps</li>
+                            </ul>
+
+                            <!-- <ul>
+                                <li class="download__item">
+                                    <a class="nav__cv" href="#download">
+                                        <i class="uil uil-estate"></i> Download Cv
+                                    </a>
+                                </li>
+                            </ul> -->
+
+
+                        </div>
+
+                        <div class="btn__download">
+                            <button class="btn">Download Cv</button>
+                        </div>
+
+                    </div>
+
+
+                    <div class="skills__img">
+
+                        <div class="first__row flex">
+
+                            <img class="row" src="image/slack.svg" alt="">
+                            <img class="row" src="image/react .svg" alt="">
+                            <img class="row" src="image/ubuntu-logo-8B7C9ED4AD-seeklogo.com.png" alt="">
+                             
+                        </div>
+
+                        <div class="second__row">
+
+                            <img class="row" src="image/github.svg" alt="">
+                            <img class="row" src="image/asana-logo-1200x1200.png" alt="">
+                            <img class="row-js row" src="image/Vector.png" alt=""> 
+                        </div>
+
+                        <div class="third__row">
+
+                            
+                             
+                        </div>
+
+                        <div class="forth__row">
+                             
+                        </div>
+
+                        <div class="fifth__row">
+                             
+                        </div>
+
+
+                    </div>
+                </div>
+
+              
+            </section>
 
         </main>
+        
 
-   
-        <footer class="footer">
-            <p class="footerParagraph">© 2023 Baki Kyungu  Wa Kishimba · Lubumbashi, DRC</p>   
-        </footer>
 
-</body>
+    </body>
+
+
+
 </html>
