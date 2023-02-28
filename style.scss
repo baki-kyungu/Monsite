@@ -787,32 +787,35 @@ html{
 
                 .soc-container{
 
-                    border: 1px solid blueviolet;
-                    height: 440px;
+                    // border: 1px solid blueviolet;
+                    height: 500px;
                     width: 10%;
                     margin: auto;
                     margin-top: 50px;
                     margin-right: 250px;
                     display: flex;
                     flex-direction: column;
+                   
 
                     .whatasapp{
 
                         height: 100px;
-                        width: 80%;
+                        width: 60%;
                         border: 1px solid #BCBCBC;
                         border-radius: 5px;  
                         margin: auto;
 
                         a{
 
-                            img{
+                            width: 400px;   
+                            height: 200px;  
 
-                                width: 60px;
-                                height: 60px;
-                                border-radius: 50px;
-                                margin-left: 40px;
-                                margin-top: 20px;                      
+                            .uil-whatsapp{
+ 
+                                color: white;  
+                                font-size: 90px;   
+                                padding-left: 10px;   
+                                      
                                
                             }
                         }    
@@ -825,7 +828,7 @@ html{
                     .facebook{
 
                         height: 100px;
-                        width: 80%;
+                        width: 60%;
                         border: 1px solid #BCBCBC;
                         margin-bottom: 20px;
                         border-radius: 5px;
@@ -833,14 +836,11 @@ html{
 
                         a{
 
-                            img{
-
-                                width: 60px;
-                                height: 60px;
-                                border-radius: 50px;
-                                margin-left: 40px;
-                                margin-top: 20px;                      
-                               
+                            .uil-facebook{
+                    
+                                font-size: 90px;
+                                color: white;
+                                padding-left: 10px;  
                             }
                         }
                         
@@ -853,19 +853,17 @@ html{
                     .github{
 
                         height: 100px;
-                        width: 80%;
+                        width: 60%;
                         border: 1px solid #BCBCBC;
                         border-radius: 5px;
                         margin: auto;
 
                         a{
-                            img{
-
-                                width: 60px;
-                                height: 60px;
-                                border-radius: 50px;
-                                margin-left: 40px;
-                                margin-top: 20px;       
+                            .uil-github{
+ 
+                                font-size: 90px;
+                                color: white; 
+                                padding-left: 10px;  
                             }
                         }
                     }
