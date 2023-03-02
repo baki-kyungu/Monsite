@@ -21,6 +21,9 @@
     --border-top: 1px solid #BCBCBC;
     --form__color : white;
     --border-fifteen: 15px;
+    --black-color: black;
+    --homeSection-background-color: white;
+    --front-padding: 80px;
 
 
     // ==========================================600px=========================================================
@@ -30,7 +33,6 @@
 }
 
 html{
-
     scroll-behavior: smooth;
 }
 
@@ -38,9 +40,9 @@ html{
         .header{
 
             width: 100%;
+            height: auto;
             position: fixed;
             left: 0;
-
 // ================================================nav============================================================================
             .nav{
 
@@ -50,6 +52,7 @@ html{
                 justify-content: space-between;
                 align-items: center;
                 height: var(--header-height);
+               
 
                 .redpart{
                     color: var(--primary-red);
@@ -127,24 +130,21 @@ html{
         .main{
 
             //===========================Home section==================================================
-
             .home__container{
 
                 height: auto;
-                max-width: 100%;
+                max-width: 80%;
                 margin: auto;
                 display: flex;
                 justify-content: space-between;
-                background-color: var(--body-color);
+                background-color: var(--homeSection-background-color);
 
                 .home__data{
 
-                    margin-top: 15%;
-                    margin-left: 80px;
-                    
-                    border: 1px solid rgb(0, 0, 0);
-                    height: 500px;
-                    width: 35%;
+                    margin-top: 20%;
+                    margin-left: var(--front-padding);
+                    height: auto;
+                    width: auto;
 
                     .home__title{
 
@@ -160,8 +160,7 @@ html{
                         font-size: var(--h1-size);
                         padding: 18px;
                         padding-top: 0px;
-                        color: var(--first-color);
-
+                        color: var(--black-color);
                     }
 
                     .home__subtitle-span{
@@ -176,6 +175,7 @@ html{
                         color: var(--first-color);
                         font-style: var(--font-family);
                         padding-bottom: 50px;
+                        width: 70%;
                     }
 
                     .home__link-span{
@@ -192,7 +192,6 @@ html{
                         text-decoration: none;
 
                         .button:hover{
-
                             color: #D53C42;
                         }
 
@@ -202,19 +201,17 @@ html{
 
                 .home__img{
 
-                    margin-top: 10%;
+                    margin-top: 20%;
                     margin-right: 150px;
-                    
-                    border: 1px solid rgb(0, 0, 0);
-                    height: 500px;
+                    height: auto;
                     width: 35%;
-                    // background-color: #295481;
 
                     img{
 
                         border-radius: 50%;
-                        width: 348px;
-                        height: 345px;
+                        width: 250px;
+                        height: 250px;
+                
                     }
 
                 }
@@ -234,34 +231,37 @@ html{
 
             .about__container {
 
+                height: auto;
+                width: 80%;
+                margin: auto;
+
                 .about__title{
 
-                    width: 510px;
+                    width: 400px;
                     height: auto;
-                    font-size: 66px;
+                    font-size: 56px;
                     font-family: var(--font-family);
-                    padding-top: 60px;
-                    margin-left: 245px;                   
+                    margin-bottom: 40px;
+                    margin-top: 15%;
+                    margin-left: var(--front-padding);                  
                 }
 
                 .description__paragraph{
 
-                    height: 400px;
-                    background-color: var(--description-backgrround);
-
                     .description__flex{
 
-                       
-                        margin: auto;
-                        width: 80%;
-                        height: 400px;
+                        margin-top: 80px;
+                        margin-left: 60px;
+                        max-width: 100%;
+                        height: auto;
                         display: flex;
                         justify-content: flex-start;
+                        margin-bottom: 60px;
 
                         .my-description-title{
 
                             margin: 30px;
-                            width: 35%;
+                            width: auto;
                             height: 350px;
 
                             .description-title{
@@ -271,19 +271,23 @@ html{
                                 font-family: var(--font-family);
                                 font-style: normal;
                                 font-weight: 400px;  
+                                width: 600px;
                             }
 
                             ul{
-
                                 li{
-  
                                     padding-top: 20px;
-                                    padding-left: 20px;
+                                    margin-left: 100px;
                                     font-size: 24px;
                                     font-family: var(--font-family);
                                     font-style: normal;
                                     font-weight: 400px;
                                     line-height: 20px;
+                                    list-style: none;
+
+                                    .uil-check-circle{
+                                        color: goldenrod;
+                                    }
                                     
                                 }
                             }
@@ -294,18 +298,23 @@ html{
                             width: 35%;
                             height: 350px;
                             margin: 30px;
-                            ul{
 
-                                
+                            ul{
+   
                                 li{
-  
+
+                                    list-style: none;
                                     padding-top: 20px;
-                                    padding-left: 20px;
+                                    margin-left: var(--front-padding);
                                     font-size: 24px;
                                     font-family: var(--font-family);
                                     font-style: normal;
                                     font-weight: 400px;
                                     line-height: 20px;
+
+                                    .uil-check-circle{
+                                        color: goldenrod;
+                                    }
                                 
                                 }
                             }
@@ -319,21 +328,24 @@ html{
             //===========================Skills section=================================================
             .skills__container{
 
+                height: auto;
+                width: 80%;
+                margin: auto;
+
                 .skills__information-flex{
 
                     height: auto;
-                    background-color: #ffffff;
+                    margin: auto;
+                    background-color: white;
                     width: 90%;
                     display: flex;
                     justify-content: center;
-                    margin-left: 40px;
                     margin-top: 80px;
                     align-items: center;
 
                     .skills__description{
 
-                        // border: 1px solid red;
-                        width: 45%;
+                        width: auto;
                         margin-left: 50px;
                         height: 900px;
                         margin-top: 40px;
@@ -385,7 +397,7 @@ html{
                                     list-style: none;
 
                                     .uil-check-circle{
-                                        color: green;
+                                        color: goldenrod;
                                     }
                                     
                                 }
@@ -416,21 +428,20 @@ html{
 
                     .skills__img{
 
-                        border: 3px solid red;
                         border-radius: 15% 0 15% 0;
-                        width: 30%;
+                        width: auto;
                         margin: 20px;
                         margin-left: 60px;
                         height: 620px;
                         margin-top: 40px;
                         background-color: var(--colorblue);
+                        border: 2px solid goldenrod;
 
                         .first__row{
 
                             display: flex;
                             justify-content: center;
                             height: 100px;
-                            // border: 1px solid black;
                             margin: 15px;
 
                             .row{
@@ -453,7 +464,6 @@ html{
                             display: flex;
                             justify-content: center;
                             height: 100px;
-                            // border: 1px solid rgb(4, 4, 4);
                             margin: 15px;
                             margin-left: 0px;
 
@@ -461,7 +471,6 @@ html{
                                 padding-left: 15px;
                               
                             }
-
                             .row-js{
 
                                 margin-top: 10px;
@@ -474,7 +483,6 @@ html{
                             display: flex;
                             justify-content: space-around;
                             height: 100px;
-                            // border: 1px solid black;
                             margin: 15px;
                             margin-left: 0px;
                             margin-right: 30px;
@@ -490,7 +498,6 @@ html{
                                 margin-bottom: 10px;
                             }
                             
-
                             .triangle{
 
                                 height: 80px;
@@ -503,12 +510,11 @@ html{
                             display: flex;
                             justify-content: space-between;
                             height: 100px;
-                            // border: 1px solid rgb(12, 12, 12);
                             margin: 15px;
 
                             .row{
-                                padding-left: 40px;
-                              
+
+                                padding-left: 40px;  
                             }
 
                             .row-js{
@@ -532,12 +538,10 @@ html{
                             display: flex;
                             justify-content: space-between;
                             height: 100px;
-                            // border: 1px solid rgb(0, 0, 0);
                             margin: 15px;
 
                             .row{
-                                padding-left: 40px;
-                              
+                                padding-left: 40px;  
                             }
 
                             .row-js{
@@ -570,7 +574,8 @@ html{
             .project__container{
 
                 height: auto;
-                max-width: 100%;
+                max-width: 80%;
+                margin: auto;
                 border-top: var(--border-top);
                 margin-top: 250px;
 
@@ -619,15 +624,13 @@ html{
                                 display: inline-block;
                                 margin-top: 20px;
                                 padding: 10px;
-                                
-                                
+                                                          
                                 a{
                                     text-decoration: none;
                                     font-size: 16px;
                                     font-family: var(--font-family);
                                     font-style: normal;
                                     color: var(--colorblue);
-
                                 }
 
                                 a:hover{
@@ -650,21 +653,20 @@ html{
 
                 height: auto;
                 border-top: var(--border-top);
-                max-width: 100%;
-                // background-color: var(--first-color);
+                max-width: 80%;
+                margin: auto;
                 background-color: var(--colorblue);
                 display: flex;
                 justify-content: center;
+                border-radius: 15px;
                 // visibility: hidden;
 
                 .id__container{
 
-                    // border: 1px solid blueviolet;
                     height: 500px;
-                    width: 20%;
+                    width: auto;
                     margin: auto;
                     margin-top: 60px;
-                    margin-left: 280px;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
@@ -707,19 +709,17 @@ html{
                     .motal__title{
 
                         width: 80%;
-                        height: 70px;
+                        height: auto;
                         font-family: var(--font-family);
                         font-style: normal;
                         font-weight: 300;
 
                     }
 
-
                 }
 
                 .carnet__container{
 
-                    // border: 1px solid blueviolet;
                     height: 600px;
                     width: 40%;
                     margin-top: 20px;
@@ -727,7 +727,7 @@ html{
                     .form{
 
                         height: 500px;
-                        width: 90%;
+                        width: auto;
                         margin: auto;
                         margin-top: 40px;
                         border: 1px solid #BCBCBC;
@@ -736,19 +736,16 @@ html{
                         .form__title{
 
                             text-align: center;
-                            color: var(--first-color);
+                            color: white;
                             padding-bottom: 20px;
                             margin-bottom: 20px;
-
+                            font-family: var(--font-family);
 
                             .uil-envelope-check{
 
                                 width: 150px;
                                 height: 150px;
                                 color: var(--form__color);
-                                font-family: var(--font-family);
-                                font-style: normal;
-                                font-weight: 700;
                                 font-size: 24px;
                             }
                         }
@@ -800,23 +797,21 @@ html{
 
                 .soc-container{
 
-                    // border: 1px solid blueviolet;
                     height: 500px;
-                    width: 10%;
+                    width: auto;
                     margin: auto;
                     margin-top: 50px;
                     margin-right: 250px;
                     display: flex;
                     flex-direction: column;
                    
-
                     .whatasapp{
 
                         height: 100px;
-                        width: 60%;
+                        width: auto;
                         border: 1px solid #BCBCBC;
-                        border-radius: 5px;  
-                        margin: auto;
+                        border-radius: 5px; 
+                        margin: auto;      
 
                         a{
 
@@ -841,32 +836,31 @@ html{
                     .facebook{
 
                         height: 100px;
-                        width: 60%;
+                        width: auto;
                         border: 1px solid #BCBCBC;
                         margin-bottom: 20px;
                         border-radius: 5px;
                         margin: auto;
 
                         a{
-
                             .uil-facebook{
                     
                                 font-size: 90px;
                                 color: white;
                                 padding-left: 10px;  
                             }
-                        }
-                        
+                        }                  
                     }
 
                     .facebook:hover{
+
                         background-color: var(--primary-red);
                     }
 
                     .github{
 
                         height: 100px;
-                        width: 60%;
+                        width: auto;
                         border: 1px solid #BCBCBC;
                         border-radius: 5px;
                         margin: auto;
@@ -884,8 +878,6 @@ html{
                     .github:hover{
                         background-color: var(--primary-red);
                     }
-
-        
 
                 }
             
@@ -951,8 +943,7 @@ html{
                         from {transform: rotate(0deg);}
                         to {transform: rotate(360deg);}
                     }
-                      
-                  
+                              
                     /* spinner positioning */
                       
                     #html-spinner, #svg-spinner{
@@ -992,7 +983,6 @@ html{
                 max-width: 100%;
                 background-color: black;
 
-
                 .footle__title{
 
                     color: white;
@@ -1007,132 +997,237 @@ html{
 
         }
 
-
-@media screen  and (max-width: 600px){
+@media only screen and (max-width: 600px) {
 
     .header{
 
         width: 100%;
-        position: relative;
+        height: auto;
+        position: fixed;
+        left: 0;
+        top: 0;
+       
+
+// ================================================nav============================================================================
         .nav{
-            .nav__menu{
-                display: none;
+
+            max-width: 600px;
+            background-color: var(--colorblue);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: var(--header-height);
+            position: inherit;
+           
+            .redpart{
+                color: var(--primary-red);
             }
+
+            .nav__logo{
+
+                cursor: pointer;
+                margin-left: 40px;
+                font-size: 14px;
+                font-weight: 700;
+                width: 160px;
+            }
+
+            .nav__logo:hover{
+
+                color: var(--primary-red);
+            }
+
+            .nav__menu{
+
+                visibility: hidden;
+                
+                ul{
+
+                    list-style: none;
+
+                    li{
+
+                        display: inline-block;
+                        padding: 50px;
+
+                        a{
+
+                            text-decoration: none;
+                            color: var(--first-color);      
+                        }
+
+                        a:hover{
+
+                            color: var(--primary-red);
+                        }
+                    }
+                }
+            }
+
+            .nav__btns{
+
+                display: none;
+
+                i{
+                    color: var(--first-color);
+                    margin-right: 60px;
+                    width: 30px;
+                }
+
+                i:hover{
+
+                    color: var(--primary-red);
+                 
+                }
+
+
+                .nav__close, .nav__apps{
+                    display: none;
+
+                }
+            }
+
         }
-      
     }
 
     .main{
 
+        //===========================Home section==================================================
+
         .home__container{
+
+            max-width: 100%;
+            margin: auto;
+            display: flex;
+            flex-direction: column-reverse;
+            background-color: black;
+            padding-bottom: 40px;
 
             .home__data{
 
-                margin-top: 120px;
+                height: auto;
+                width: auto;
 
                 .home__title{
 
-                    color: var(--first-color);
-                    font-family: var(--font-family);
-                    font-size: 20px;
+                    font-size: 12px;
                 }
 
                 .home__subtitle{
 
-                    font-size: 12px;
-                    padding: 10px;
-                    color: var(--first-color);
+                    font-size: 36px;
+                    color: white;
+
                 }
 
                 .home__description{
 
-                    font-size: 14px;
-                    padding-left: 10px;
-                    padding-bottom: 50px;
+                    font-size: 20px;
+                    width: 400px;
+                    margin: auto;
+                    margin-left: 0;
+                    height: auto;
+                    text-align: justify;
                 }
+
+                .button{
+
+                    color: var(--colorblue);
+                    padding-left: 0;
+                    font-size: 16px;
+                    text-decoration: none;
+                    border: 1px solid white;
+                    background-color: var(--colorblue);
+                    color: white;
+                    height: 80px;
+                    margin-left: 20px;
+
+                    .button:hover{
+
+                        color: #D53C42;
+                    }
+
+                }   
 
             }
 
             .home__img{
 
-                margin-top: 10%;
-                border: 1px solid rgb(0, 0, 0);
-                height: 400px;
-                width: 35%;
-            
+                margin-top: 30%;
+                height: auto;
+                width: 100%;
+               
                 img{
 
-                    border-radius: 50%;
-                    width: 248px;
-                    height: 245px;
+                    margin-left: 20%;
+            
                 }
 
             }
+            
         }
+
+        //===========================About section==================================================
 
         .about__container {
 
-            height: auto;
-            max-width: 100%;
+            width: 100%;
 
             .about__title{
 
-                font-size: 20px;        
+                width: 400px;
+                height: auto;     
+                text-align: center;         
             }
 
             .description__paragraph{
 
-                background-color: var(--description-backgrround);
-
                 .description__flex{
 
-                    height: auto;
-                    display: block;
-                    justify-content: center;
+                    margin-top: 80px;
+                    margin-left: 0;
+                    max-width: 100%;
+                    display: flex;
+                    flex-direction: column;
 
                     .my-description-title{
 
-                        width: 100%;
+                        margin: 30px;
                         height: auto;
 
                         .description-title{
 
-                            padding-top: 20px;
-                            font-size: 24px;
-                            font-family: var(--font-family);
-                            font-style: normal;
-                            font-weight: 400px;  
+                            font-size: 18px;
+                            width: auto;
+                            text-align: justify;
                         }
 
                         ul{
 
                             li{
 
-                                padding-top: 20px;
-                                padding-left: 20px;
+                                margin: 40px;
                                 font-size: 16px;
+                                line-height: 40px;
+                                margin-bottom: 0;
+                                
                             }
                         }
                     }
 
                     .my-description-list{
 
-                        width: 35%;
-                        height: 350px;
                         margin: 30px;
+                        margin-top: 0px;
+                        height: auto;
+
                         ul{
 
-                            
                             li{
 
-                                padding-top: 20px;
-                                padding-left: 20px;
+                                margin: 40px;
                                 font-size: 16px;
-                                font-family: var(--font-family);
-                                font-style: normal;
-                                font-weight: 400px;
-                                line-height: 20px;
-                            
+                                line-height: 10px;
                             }
                         }
                     }
@@ -1142,26 +1237,25 @@ html{
             }
         }
 
+        //===========================Skills section=================================================
         .skills__container{
 
-            margin-top: 200Px;
+            height: auto;
+            width: 100%;
 
             .skills__information-flex{
 
-                height: auto;
-                background-color: #ffffff;
-                width: 100%;
                 margin: auto;
+                width: 100%;
                 display: flex;
                 flex-direction: column;
-                justify-content: center;
-                align-items: center;
+                margin-top: 80px;
 
                 .skills__description{
 
-                    // border: 1px solid red;
-
-                    height: auto;
+                    width: auto;
+                    margin-left: 0;
+                    height:auto;
                     margin-top: 40px;
                     display: flex;
                     flex-direction: column;
@@ -1170,23 +1264,16 @@ html{
 
                         .skills__title{
 
-                            font-family: var(--font-family);
-                            font-style: normal;
-                            font-weight: 400;
-                            font-size: 32px;
+                            font-size: 38px;
                             text-align: center;
                         
                         }
 
                         .skills__subtitle-first{
 
-                            font-family: var(--font-family);
-                            font-style: normal;
-                            font-weight: 400;
-                            font-size: 24px;
+                            font-size: 32px;
                             text-align: center;
-                            line-height: 40px;
-                            margin-top: 40px;
+                            margin-top: O;
                             color: var(--primary-red);
 
                         }
@@ -1196,23 +1283,10 @@ html{
 
                         ul{
 
-                            margin-top: 20px;
-                            font-family: var(--font-family);
-                            font-style: normal;
-                            font-weight: 400;
-                            font-size: 20px;
-                            line-height: 30px;
-                            color: var(--first-color);
-                            
-
                             li{
 
-                                margin-left: 100px;
-                                list-style: none;
-
-                                .uil-check-circle{
-                                    color: green;
-                                }
+                                margin-left: 40px;
+                                margin-right: 40px;
                                 
                             }
                         }
@@ -1221,106 +1295,55 @@ html{
                     .btn__download{
                         .btn{
 
-                            height: 40px;
-                            width: 100px;
-                            background-color: var(--colorblue);
-                            text-align: center;
-                            color: white;
-                            border-radius: 15px;
-                            margin-left: 100px;
-                            margin-top: 40px;
-                            cursor: pointer;
+                            margin-top: 80px;
+                            margin-left: 120px;
                         
-                        }
-
-                        .btn:hover{
-
-                            background-color: var(--primary-red);
                         }
                     }
                 }
 
                 .skills__img{
 
-                    border: 3px solid red;
-                    border-radius: 15% 0 15% 0;
-                    width: 100%;
-                    margin-top: 120px;
-                    margin-left: 40px;
+                    width: 70%;
                     height: auto;
-                    background-color: var(--colorblue);
+                    margin-top: 80px;
 
                     .first__row{
 
-                        display: flex;
-                        justify-content: center;
-                        height: 100px;
-                        margin: 15px;
-
-                        .devops{
-
-                            width: 120px;
-                            height: 70px;
+                        .row{
+                            padding-left: 10px;
                         }
-                        
 
                     }
 
                     .second__row{
 
-                        display: flex;
-                        justify-content: center;
-                        height: 100px;
-                        // border: 1px solid rgb(4, 4, 4);
-                        margin: 15px;
-
-                        .row-js{
-
-                            margin-top: 10px;
+                        .row{
+                            padding-left: 0;   
                         }
+
                     }    
 
                     .third__row{
 
-                        display: flex;
-                        justify-content: center;
-                        height: 100px;
-                        margin: 15px;
-                        margin-left: 0px;
-                        margin-right: 30px;
-
-                        .row-js{
-
-                            margin-top: 10px;
-                            margin-bottom: 10px;
-                        }
-                        
-
-                        .triangle{
-
-                            height: 80px;
+                        .row{
+                            padding-left: 2px;
+                          
                         }
 
                     }
 
                     .forth__row{
 
-                        display: flex;
-                        justify-content: center;
-                        height: 100px;
-                        margin: 15px;
-
-                        .row-js{
-
-                            margin-top: 10px;
-                            margin-bottom: 10px;
+                        .row{
+                            padding-left: 20px;
+                          
                         }
 
                         .chatgpt{
 
-                            // border: 1px solid white;
                             border-radius: 10px;
-                            width: 120px;
+                            width: 100px;
                             height: 80px;
                         }
 
@@ -1328,15 +1351,9 @@ html{
 
                     .fifth__row{
 
-                        display: flex;
-                        justify-content: center;
-                        height: 100px;
-                        margin: 15px;
-
-                        .row-js{
-
-                            margin-top: 10px;
-                            margin-bottom: 10px;
+                        .row{
+                            padding-left: 20px;
+                          
                         }
 
                         .responsive{
@@ -1348,7 +1365,7 @@ html{
 
                         .MySQL{
 
-                            width: 140px;
+                            width: 100px;
                             height: 80px;
                         }
 
@@ -1358,37 +1375,34 @@ html{
             }
         }
 
+        //===========================project section================================================
+
         .project__container{
+ 
+            max-width: 100%;
+            margin: 20px;
 
             .title__container{
 
-                margin: auto;
+                width: 100%;
                 margin-top: 180px;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                margin-left: 40px;
 
                 .project_title{
-
-                    font-family: var(--font-family);
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: 24px;
-                    padding-bottom: 80px;
+ 
+                    font-size: 18px;
                     text-align: justify;
+                    margin: 20px;
                 }
 
-                a{
+                img{
+                    width: 60%;
+                }
 
-                    text-align: center;
-                    font-family: var(--font-family);
-                    font-style: normal;
-                    font-weight: 700;
-                    font-size: 34px;
-                    letter-spacing: 0.08em;
-                    padding-top: 60px;
-                    color: #D53C42;
+                a{      
+                    font-size: 24px;
 
                 }
 
@@ -1405,32 +1419,220 @@ html{
                             display: inline-block;
                             margin-top: 20px;
                             padding: 10px;
-                            
-                            
+                                                     
                             a{
                                 text-decoration: none;
                                 font-size: 16px;
                                 font-family: var(--font-family);
                                 font-style: normal;
                                 color: var(--colorblue);
-
                             }
 
+                            a:hover{
+
+                                color: black;
+                            }
+                            
                         }
                     }
                 }
 
             }
 
-
         }
 
+        //===========================contact section=================================================
 
+        .contactMe__section{
+            
+            height: auto;
+            max-width: 80%;
+            display: block;
+            background-color: var(--colorblue);
+
+            .id__container{
+
+                height: 500px;
+                width: 80%;
+                margin: auto;
+                margin-top: 40px;
+                margin-bottom: 0;
+                margin-left: 25%;
+                display: block;
+
+                .identity{
+
+                    width: 80%;
+                    height: 140px;
+
+                    .id__title{
+
+                        padding-top: 20px;
+                        position: inherit;
+                        font-family: var(--font-family);
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 30px;
+                        color: white;
+
+                    }
+                }
+
+                .motal__title{
+
+                    width: 80%;
+                    height: auto;
+                    font-family: var(--font-family);
+                    font-style: normal;
+                    font-weight: 300;
+                    color: #295481;
+
+                }
+            }
+
+            .carnet__container{
+
+                height: 600px;
+                width: 80%;
+                margin: auto;
+
+                .form{
+
+                    height: 500px;
+                    width: 100%;
+                    margin: auto;
+                    margin-bottom: 0%;
+
+                    input, textarea {
+
+                        height: 50px;
+                        width: 60%;
+                        background-color: var(--colorblue);
+                    }
+                    .btn__submit{
+
+                        margin-top: 70px;
+                    }
+                  
+                }
+            }
+            .soc-container{
+
+                margin-top: 0;
+                padding-bottom: 40px;
+                display: flex;
+                flex-direction: row;
+                align-items:flex-start;
+
+                height: auto;
+                margin-left: 120px;
+               
+                .whatasapp{
+
+                    height: 70px;
+                    width: auto; 
+                    margin: auto;    
+
+                    a{
+                        .uil-whatsapp{
+
+                            color: white;  
+                            font-size: 60px;     
+                                  
+                           
+                        }
+                    }    
+                } align-content: center;
+
+                .whatasapp:hover{
+                    background-color: var(--primary-red);
+                }
+
+                .facebook{
+
+                    height: 70px;
+                    width: auto;
+                    border: 1px solid #BCBCBC;
+                    margin-bottom: 20px;
+                    border-radius: 5px;
+                    margin: auto;
+
+                    a{
+                        .uil-facebook{
+                
+                            font-size: 60px;
+                            color: white; 
+                        }
+                    }
+                    
+                }
+
+                .facebook:hover{
+                    background-color: var(--primary-red);
+                }
+
+                .github{
+
+                    height: 70px;
+                    width: auto;
+                    border: 1px solid #BCBCBC;
+                    border-radius: 5px;
+                    margin: auto;
+
+                    a{
+                        .uil-github{
+
+                            font-size: 60px;
+                            color: white; 
+                        }
+                    }
+                }
+
+                .github:hover{
+                    background-color: var(--primary-red);
+                }
+            }       
+        }
+
+        //===========================Animation section================================================
+        .animation__section{
+
+            background: goldenrod;
+            height: 300px;
+            max-width: 100%;
+
+            #container{
+
+                width:90%;
+                max-width:700px;
+                margin:1em auto;
+                position:relative;
+                           
+            }      
+        }
+
+        //===========================Footer section===================================================
+
+        .footer__container{
+
+            height: 80px;
+            max-width: 100%;
+            background-color: black;
+
+
+            .footle__title{
+
+                color: white;
+                text-align: center;
+                font-family: var(--font-family);
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                padding-top: 30px;
+            }
+        }
     }
 
-
-};
-    
-
+}
   
 
