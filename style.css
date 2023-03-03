@@ -33,7 +33,6 @@ html {
 .header {
   width: 100%;
   height: auto;
-  position: fixed;
   left: 0;
 }
 .header .nav {
@@ -443,7 +442,7 @@ html {
   border-top: var(--border-top);
   max-width: 80%;
   margin: auto;
-  background-color: var(--colorblue);
+  background-color: black;
   display: flex;
   justify-content: center;
   border-radius: 15px;
@@ -516,7 +515,7 @@ html {
 .main .contactMe__section .carnet__container .form input, .main .contactMe__section .carnet__container .form textarea {
   height: 50px;
   width: 70%;
-  background-color: var(--colorblue);
+  background-color: black;
   margin-left: 90px;
   box-sizing: border-box;
   border: 1px solid rgb(255, 255, 255);
@@ -704,7 +703,7 @@ html {
   padding-top: 30px;
 }
 
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .header {
     width: 100%;
     height: auto;
@@ -767,6 +766,7 @@ html {
   }
   .main .home__container {
     max-width: 100%;
+    min-width: 600px;
     margin: auto;
     display: flex;
     flex-direction: column-reverse;
@@ -791,6 +791,7 @@ html {
     margin-left: 0;
     height: auto;
     text-align: justify;
+    overflow: scroll;
   }
   .main .home__container .home__data .button {
     color: var(--colorblue);
