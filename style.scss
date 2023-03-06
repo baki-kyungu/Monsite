@@ -463,7 +463,7 @@ html{
                 border-top: var(--border-top);
                 margin-top: 200px;
 
-                .title__container{
+                .next{
 
                     width: 600px;
                     margin: auto;
@@ -481,7 +481,7 @@ html{
                         padding-bottom: 50px;
                     }
 
-                    a{
+                    .realisation{
 
                         text-align: center;
                         width: 765px;
@@ -495,34 +495,25 @@ html{
 
                     }
 
-                    .next{
+                    .numbers{
 
                         margin-bottom: 240px;
      
-                        .next__ul{
+                        .number{
+                            display: inline-block;
+                            margin-top: 30px;
+                            padding: 10px;
 
-                            list-style: none;
+                            font-size: 16px;
+                            font-family: var(--font-family);
+                            font-style: normal;
+                            color: var(--colorblue);
+                            cursor: pointer;
+                        }
 
-                            .next__ul-li{
+                        .number:hover{
 
-                                display: inline-block;
-                                margin-top: 20px;
-                                padding: 10px;
-                                                          
-                                a{
-                                    text-decoration: none;
-                                    font-size: 16px;
-                                    font-family: var(--font-family);
-                                    font-style: normal;
-                                    color: var(--colorblue);
-                                }
-
-                                a:hover{
-
-                                    color: black;
-                                }
-                                
-                            }
+                            color: black;
                         }
                     }
 
