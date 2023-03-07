@@ -312,7 +312,7 @@ html {
   border-top: var(--border-top);
   margin-top: 200px;
 }
-.main .project__container .title__container {
+.main .project__container .next {
   width: 600px;
   margin: auto;
   margin-top: 180px;
@@ -320,14 +320,14 @@ html {
   flex-direction: column;
   align-items: center;
 }
-.main .project__container .title__container .project_title {
+.main .project__container .next .project_title {
   font-family: var(--font-family);
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   padding-bottom: 50px;
 }
-.main .project__container .title__container a {
+.main .project__container .next .realisation {
   text-align: center;
   width: 765px;
   font-family: var(--font-family);
@@ -338,25 +338,20 @@ html {
   padding-top: 60px;
   color: var(--primary-red);
 }
-.main .project__container .title__container .next {
+.main .project__container .next .numbers {
   margin-bottom: 240px;
 }
-.main .project__container .title__container .next .next__ul {
-  list-style: none;
-}
-.main .project__container .title__container .next .next__ul .next__ul-li {
+.main .project__container .next .numbers .number {
   display: inline-block;
-  margin-top: 20px;
+  margin-top: 30px;
   padding: 10px;
-}
-.main .project__container .title__container .next .next__ul .next__ul-li a {
-  text-decoration: none;
   font-size: 16px;
   font-family: var(--font-family);
   font-style: normal;
   color: var(--colorblue);
+  cursor: pointer;
 }
-.main .project__container .title__container .next .next__ul .next__ul-li a:hover {
+.main .project__container .next .numbers .number:hover {
   color: black;
 }
 .main .contactMe__section {
