@@ -1,1367 +1,1036 @@
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-:root{
+:root {
+  --primary-red: #d53c42;
+  --colorblue: #2596be;
+  --body-color: black;
+  --first-color: #bcbcbc;
+  --second-color: white;
+  --a-font-size: 24px;
+  --header-height: 100px;
+  --section-padding: 2rem 0 4 rem;
+  --font-family: "Open Sans";
+  --h2-size: 28px;
+  --h1-size: 66px;
+  --description-backgrround: #dadcdf;
+  --border-top: 1px solid #bcbcbc;
+  --form__color: white;
+  --border-fifteen: 15px;
+  --black-color: black;
+  --homeSection-background-color: rgb(255, 255, 255);
+  --front-padding: 80px;
+  $red: rgb(36, 77, 0);
+  --golden-color: goldenrod;
+  --fts-black: black;
 
-    --primary-red: #D53C42;
-    --primary: #D53C42;
-    --colorblue: #2596be;
-    --body-color: black;
-    --first-color: #BCBCBC;
-    --second-color: white;
-    --a-font-size: 24px;
-    --header-height: 100px;
-    --section-padding: 2rem 0 4 rem;
-    --font-family: 'Open Sans';
-    --h2-size: 28px;
-    --h1-size: 66px;
-    --description-backgrround: #DADCDF;
-    --border-top: 1px solid #BCBCBC;
-    --form__color : white;
-    --border-fifteen: 15px;
-    --black-color: black;
-    --homeSection-background-color: rgb(255, 255, 255);
-    --front-padding: 80px;
-    $red: rgb(36, 77, 0);
-    --golden-color: goldenrod;
+  // ==========================================600px=========================================================
 
-
-    // ==========================================600px=========================================================
-   
-    --h2__size-mobile: 16px;
-  
+  --h2__size-mobile: 16px;
 }
 
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family);
 }
 
 // ================================================header============================================================================
-        .header{
+.header {
+  width: auto;
+  height: auto;
+  left: 0;
+  margin: auto;
+  // ================================================nav============================================================================
+  .nav {
+    max-width: 100%;
+    background-color: var(--colorblue);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: var(--header-height);
 
-            width: auto;
-            height: auto;
-            left: 0;
-            margin: auto;
-// ================================================nav============================================================================
-            .nav{
+    .redpart {
+      color: var(--primary-red);
+    }
 
-                max-width: 100%;
-                background-color: var(--colorblue);
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                height: var(--header-height);
-               
+    .nav__logo {
+      text-decoration: none;
+      color: var(--first-color);
+      cursor: pointer;
+      margin-left: 150px;
+    }
 
-                .redpart{
-                    color: var(--primary-red);
-                }
+    .nav__logo:hover {
+      color: var(--primary-red);
+    }
+    .nav__menu {
+      ul {
+        list-style: none;
 
-                .nav__logo{
+        li {
+          display: inline-block;
+          padding: 50px;
 
-                    text-decoration: none;
-                    color: var(--first-color);
-                    cursor: pointer;
-                    margin-left: 150px;
-                }
+          a {
+            text-decoration: none;
+            color: var(--first-color);
+          }
 
-                .nav__logo:hover{
+          a:hover {
+            color: var(--primary-red);
+          }
+        }
+      }
+    }
 
-                    color: var(--primary-red);
-                }
+    .nav__btns {
+      i {
+        color: var(--first-color);
+        margin-right: 60px;
+        width: 30px;
+      }
+      i:hover {
+        color: var(--primary-red);
+      }
+      .nav__close,
+      .nav__apps {
+        display: none;
+      }
+    }
+  }
+}
 
-                .nav__menu{
+.main {
+  //===========================Home section==================================================
+  .home__container {
+    height: auto;
+    max-width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--homeSection-background-color);
+    border-bottom: 1px solid rgb(163, 163, 163);
 
-                    // visibility: hidden;
-                    
-                    ul{
+    .home__data {
+      margin-top: 20%;
+      margin-left: 0;
+      height: auto;
+      width: auto;
+      color: var(--black-color);
 
-                        list-style: none;
+      .home__title {
+        padding-left: 20px;
+        font-size: var(--h2-size);
+      }
 
-                        li{
+      .home__subtitle {
+        font-size: var(--h1-size);
+        padding: 18px;
+        padding-top: 0px;
+        color: var(--black-color);
+      }
 
-                            display: inline-block;
-                            padding: 50px;
-                            // margin-right: 150px;
+      .home__subtitle-span {
+        color: var(--primary-red);
+      }
 
-                            a{
+      .home__description {
+        font-size: 24px;
+        padding-left: 20px;
+        padding-bottom: 50px;
+        width: 90%;
+        text-align: justify;
+      }
 
-                                text-decoration: none;
-                                color: var(--first-color);
-                                
-                            }
+      .home__link-span {
+        color: var(--colorblue);
+        text-decoration: none;
+      }
 
-                            a:hover{
+      .button {
+        width: 150px;
+        height: 60px;
+        margin-left: 20px;
+        display: inline-block;
+        color: var(--second-color);
+        font-size: 20px;
+        text-align: center;
+        text-decoration: none;
+        margin-bottom: 60px;
+        padding-top: 15px;
+        background-color: var(--colorblue);
+        border-radius: 15px;
+        cursor: pointer;
+      }
 
-                                color: var(--primary-red);
-                            }
-                        }
-                    }
-                }
+      .button:hover {
+        background-color: var(--primary-red);
+      }
+    }
 
-                .nav__btns{
+    .home__img {
+      margin: 20% 120px 0 30px;
+      height: auto;
+      width: 35%;
+      img {
+        border-radius: 50%;
+        width: 250px;
+        height: 250px;
+      }
+    }
+  }
 
-                   
+  //===========================About section==================================================
+  .about__container {
+    height: auto;
+    width: 60%;
+    margin: auto;
+    border-bottom: 1px solid rgb(163, 163, 163);
 
+    .about__title {
+      width: 400px;
+      height: auto;
+      font-size: 56px;
+      margin: 15% 0px 40px 30px;
+    }
 
-                    i{
-                        color: var(--first-color);
-                        margin-right: 60px;
-                        width: 30px;
-                    }
+    .description__paragraph {
+      .description__flex {
+        margin-top: 80px 0 60px 60px;
+        max-width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: flex-start;
 
-                    i:hover{
+        .my-description-title {
+          margin: 30px;
+          width: auto;
+          height: 350px;
 
-                        color: var(--primary-red);
-                     
-                    }
+          .description-title {
+            padding-top: 20px;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400px;
+            width: 600px;
+            text-align: justify;
+          }
 
+          ul {
+            li {
+              padding-top: 20px;
+              margin-left: 100px;
+              font-size: 24px;
+              font-style: normal;
+              font-weight: 400px;
+              line-height: 20px;
+              list-style: none;
 
-                    .nav__close, .nav__apps{
-                        display: none;
-
-                    }
-                }
-
+              .uil-check-circle {
+                color: goldenrod;
+              }
             }
+          }
         }
 
-        .main{
+        .my-description-list {
+          width: 35%;
+          height: 350px;
+          margin: 30px;
 
-            //===========================Home section==================================================
-            .home__container{
+          ul {
+            li {
+              list-style: none;
+              padding-top: 20px;
+              margin-left: var(--front-padding);
+              font-size: 24px;
+              font-style: normal;
+              font-weight: 400px;
+              line-height: 20px;
 
-                height: auto;
-                max-width: 80%;
-                margin: auto;
-                display: flex;
-                justify-content: space-between;
-                background-color: var(--homeSection-background-color);
-                border-bottom: 1px solid rgb(163, 163, 163);
-
-                .home__data{
-
-                    margin-top: 20%;
-                    margin-left: var(--front-padding);
-                    height: auto;
-                    width: auto;
-
-                    .home__title{
-
-                        color: var(--first-color);
-                        padding-left: 20px;
-                        font-family: var(--font-family);
-                        font-size: var(--h2-size);
-                    }
-
-                    .home__subtitle{
-
-                        font-family: var(--font-family);
-                        font-size: var(--h1-size);
-                        padding: 18px;
-                        padding-top: 0px;
-                        color: var(--black-color);
-                    }
-
-                    .home__subtitle-span{
-
-                        color: var(--primary-red);
-                    }
-
-                    .home__description{
-
-                        font-size: 24px;
-                        padding-left: 20px;
-                        color: var(--first-color);
-                        font-style: var(--font-family);
-                        padding-bottom: 50px;
-                        width: 70%;
-                    }
-
-                    .home__link-span{
-
-                        color: var(--colorblue);
-                        text-decoration: none;
-                    }
-
-                    .button{
-
-                        padding-left: 20px;
-                        color: var(--colorblue);
-                        font-size: 20px;
-                        text-decoration: none;
-                        margin-bottom: 20px;
-
-                        .button:hover{
-                            color: #D53C42;
-                        }
-
-                    }   
-
-                }
-
-                .home__img{
-
-                    margin-top: 20%;
-                    margin-right: 150px;
-                    height: auto;
-                    width: 35%;
-
-                    img{
-
-                        border-radius: 50%;
-                        width: 250px;
-                        height: 250px;
-                
-                    }
-
-                }
-
-                .home__scroll{
-
-                    width: 5%;
-                    border: 1px solid rebeccapurple;
-                    height: 500px;
-                    margin-right: 20px;
-                    padding-top: 120px;
-                }
-                
+              .uil-check-circle {
+                color: goldenrod;
+              }
             }
-
-            //===========================About section==================================================
-
-            .about__container {
-
-                height: auto;
-                width: 80%;
-                margin: auto;
-                border-bottom: 1px solid rgb(163, 163, 163);
-
-                .about__title{
-
-                    width: 400px;
-                    height: auto;
-                    font-size: 56px;
-                    font-family: var(--font-family);
-                    margin-bottom: 40px;
-                    margin-top: 15%;
-                    margin-left: var(--front-padding);                  
-                }
-
-                .description__paragraph{
-
-                    .description__flex{
-
-                        margin-top: 80px;
-                        margin-left: 60px;
-                        max-width: 100%;
-                        height: auto;
-                        display: flex;
-                        justify-content: flex-start;
-                        margin-bottom: 60px;
-
-                        .my-description-title{
-
-                            margin: 30px;
-                            width: auto;
-                            height: 350px;
-
-                            .description-title{
-
-                                padding-top: 20px;
-                                font-size: 24px;
-                                font-family: var(--font-family);
-                                font-style: normal;
-                                font-weight: 400px;  
-                                width: 600px;
-                            }
-
-                            ul{
-                                li{
-                                    padding-top: 20px;
-                                    margin-left: 100px;
-                                    font-size: 24px;
-                                    font-family: var(--font-family);
-                                    font-style: normal;
-                                    font-weight: 400px;
-                                    line-height: 20px;
-                                    list-style: none;
-
-                                    .uil-check-circle{
-                                        color: goldenrod;
-                                    }
-                                    
-                                }
-                            }
-                        }
-
-                        .my-description-list{
-
-                            width: 35%;
-                            height: 350px;
-                            margin: 30px;
-
-                            ul{
-   
-                                li{
-
-                                    list-style: none;
-                                    padding-top: 20px;
-                                    margin-left: var(--front-padding);
-                                    font-size: 24px;
-                                    font-family: var(--font-family);
-                                    font-style: normal;
-                                    font-weight: 400px;
-                                    line-height: 20px;
-
-                                    .uil-check-circle{
-                                        color: goldenrod;
-                                    }
-                                
-                                }
-                            }
-                        }
-
-                    }
-
-                }
-            }
-
-            //===========================Skills section=================================================
-            .skills__container{
-
-                height: auto;
-                width: 80%;
-                margin: auto;
-
-                .skills__information-flex{
-
-                    height: auto;
-                    margin: auto;
-                    background-color: white;
-                    width: 90%;
-                    display: flex;
-                    justify-content: center;
-                    margin-top: 80px;
-                    align-items: center;
-
-                    .skills__description{
-
-                        width: auto;
-                        margin-left: 50px;
-                        height: 900px;
-                        margin-top: 40px;
-                        display: flex;
-                        flex-direction: column;
-
-                        .skills__titles{
-
-
-                            .skills__title{
-
-                                font-family: var(--font-family);
-                                font-weight: 700;
-                                font-size: 38px;
-                                text-align: center;
-                            
-                            }
-    
-                            .skills__subtitle-first{
-    
-                                font-family: var(--font-family);
-                                font-style: normal;
-                                font-weight: 400;
-                                font-size: 28px;
-                                text-align: center;
-                                line-height: 40px;
-                                margin-top: 60px;
-                                color: white;
-                                background-color: var(--colorblue);
-    
-                            }
-                            
-                        }
-
-                        .skills__list-front-end{
-
-                            ul{
-
-                                margin-top: 20px;
-                                font-family: var(--font-family);
-                                font-style: normal;
-                                font-weight: 400;
-                                font-size: 20px;
-                                line-height: 30px;
-                                color: var(--first-color);
-                                
-
-                                li{
-
-                                    margin-left: 100px;
-                                    list-style: none;
-
-                                    .uil-check-circle{
-                                        color: var(--golden-color);
-                                    }
-                                    
-                                }
-                            }
-                        }
-
-                        .btn__download{
-                            .btn{
-
-                                height: 60px;
-                                width: 150px;
-                                background-color: var(--colorblue);
-                                text-align: center;
-                                color: white;
-                                border-radius: 15px;
-                                margin-left: 100px;
-                                margin-top: 40px;
-                                font-size: 20px;
-                                cursor: pointer;
-                            
-                            }
-
-                            .btn:hover{
-
-                                background-color: var(--primary-red);
-                            }
-                        }
-                    }
-
-                    .skills__img{
-
-                        width: auto;
-                        margin: 20px;
-                        margin-top: 0;
-                        height: 720px;
-
-                        img{
-
-                            width: 500px;
-                            padding-left: 80px;
-                            height: 700px;
-                        }
-                    }
-
-                }
-            }
-
-            //===========================project section================================================
-
-            .project__container{
-
-                height: auto;
-                max-width: 80%;
-                margin: auto;
-                border-top: var(--border-top);
-                margin-top: 200px;
-
-                .next{
-
-                    width: 600px;
-                    margin: auto;
-                    margin-top: 180px;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-
-                    .project_title{
-
-                        font-family: var(--font-family);
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 24px;
-                        padding-bottom: 50px;
-                    }
-
-                    .realisation{
-
-                        text-align: center;
-                        width: 765px;
-                        font-family: var(--font-family);
-                        font-style: normal;
-                        font-weight: 700;
-                        font-size: 34px;
-                        letter-spacing: 0.08em;
-                        padding-top: 60px;
-                        color: var(--primary-red);
-
-                    }
-
-                    .numbers{
-
-                        margin-bottom: 240px;
-     
-                        .number{
-                            display: inline-block;
-                            margin-top: 30px;
-                            padding: 10px;
-
-                            font-size: 16px;
-                            font-family: var(--font-family);
-                            font-style: normal;
-                            color: var(--colorblue);
-                            cursor: pointer;
-                        }
-
-                        .number:hover{
-
-                            color: black;
-                        }
-                    }
-
-                }
-
-
-            }
-
-            //===========================contact section=================================================
-
-            .contactMe__section{
-
-                height: auto;
-                border-top: var(--border-top);
-                max-width: 80%;
-                margin: auto;
-                background-color: rgb(59, 72, 73);
-                display: flex;
-                display: none;
-                justify-content: center;
-                border-radius: 15px;
-                visibility: hidden;
-
-                .id__container{
-
-                    height: 500px;
-                    width: auto;
-                    margin: auto;
-                    margin-top: 60px;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-
-                    .myProfile{
-
-                        width: 80%;
-                        height: 200px;
-
-                        img{
-
-                            border-radius: 50%;
-                            // border: 1px solid #F7F7F7;
-                            width: 80%;
-                            height: 200px;
-                      
-                        }
-                    }
-
-                    .identity{
-
-                        width: 80%;
-                        height: 140px;
-                        // border: 1px solid blueviolet;
-
-                        .id__title{
-
-                            width: 280px;
-                            padding-top: 20px;
-                            position: absolute;
-                            font-family: var(--font-family);
-                            font-style: normal;
-                            font-weight: 700;
-                            font-size: 30px;
-                            color: var(--first-color);
-
-                        }
-                    }
-
-                    .motal__title{
-
-                        width: 80%;
-                        height: auto;
-                        font-family: var(--font-family);
-                        font-style: normal;
-                        font-weight: 300;
-
-                    }
-
-                }
-
-                .carnet__container{
-
-                    height: 600px;
-                    width: 40%;
-                    margin-top: 20px;
-
-                    .form{
-
-                        height: 500px;
-                        width: auto;
-                        margin: auto;
-                        margin-top: 40px;
-                        border: 1px solid #BCBCBC;
-                        border-radius: 15px;
-
-                        .form__title{
-
-                            text-align: center;
-                            color: white;
-                            padding-bottom: 20px;
-                            margin-bottom: 20px;
-                            font-family: var(--font-family);
-
-                            .uil-envelope-check{
-
-                                width: 150px;
-                                height: 150px;
-                                color: var(--form__color);
-                                font-size: 24px;
-                            }
-                        }
-
-                        input, textarea {
-
-                            height: 50px;
-                            width: 70%;
-                            background-color: rgb(59, 72, 73);
-                            margin-left: 90px;
-                            box-sizing: border-box;
-                            border: 1px solid rgb(255, 255, 255);
-                            border-left: none;
-                            border-right: none;
-                            border-top: none;
-                            opacity: 50%;
-                            padding-top: 30px;    
-                        }
-
-                        .btn__submit{
-
-                            margin-top: 130px;
-                            margin-left: 90px;
-                            height: 60px;
-                            width: 140px;
-                            background-color: var(--primary-red);
-                            color: white;
-                            font-family: var(--font-family);
-                            font-style: normal;
-                            font-weight: 300;
-                            font-size: 20px;
-                            border: 1px solid white;
-                            border-radius: var(--border-fifteen);
-                        }
-                        
-                        .btn__submit:hover{
-
-                            color: black;
-                            background-color: var(--first-color);
-                        }
-
-                        input::placeholder, textarea::placeholder {
-                            color: white;
-                        }
-                      
-                    }
-
-                }
-
-                .soc-container{
-
-                    height: 500px;
-                    width: auto;
-                    margin: auto;
-                    margin-top: 50px;
-                    margin-right: 250px;
-                    display: flex;
-                    flex-direction: column;
-                   
-                    .whatasapp{
-
-                        height: 100px;
-                        width: auto;
-                        border: 1px solid #BCBCBC;
-                        border-radius: 5px; 
-                        margin: auto;      
-
-                        a{
-
-                            width: 400px;   
-                            height: 200px;  
-
-                            .uil-whatsapp{
- 
-                                color: white;  
-                                font-size: 90px;   
-                                padding-left: 10px;   
-                                      
-                               
-                            }
-                        }    
-                    }
-
-                    .whatasapp:hover{
-                        background-color: var(--primary-red);
-                    }
-
-                    .facebook{
-
-                        height: 100px;
-                        width: auto;
-                        border: 1px solid #BCBCBC;
-                        margin-bottom: 20px;
-                        border-radius: 5px;
-                        margin: auto;
-
-                        a{
-                            .uil-facebook{
-                    
-                                font-size: 90px;
-                                color: white;
-                                padding-left: 10px;  
-                            }
-                        }                  
-                    }
-
-                    .facebook:hover{
-
-                        background-color: var(--primary-red);
-                    }
-
-                    .github{
-
-                        height: 100px;
-                        width: auto;
-                        border: 1px solid #BCBCBC;
-                        border-radius: 5px;
-                        margin: auto;
-
-                        a{
-                            .uil-github{
- 
-                                font-size: 90px;
-                                color: white; 
-                                padding-left: 10px;  
-                            }
-                        }
-                    }
-
-                    .github:hover{
-                        background-color: var(--primary-red);
-                    }
-
-                }
-            
-            }
-
-            // .visible {
-            //     display: block;
-            //   }
-
-            // #contact {
-            //     display: none;
-            // }
-            //===========================Footer section===================================================
-
-            .footer__container{
-
-                height: 80px;
-                max-width: 100%;
-                background-color: rgb(59, 72, 73);
-                margin-top: 30px;
-
-                .footle__title{
-
-                    color: white;
-                    text-align: center;
-                    font-family: var(--font-family);
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: 16px;
-                    padding-top: 30px;
-                }
-            }
-
+          }
         }
+      }
+    }
+  }
+  //===========================Skills section=================================================
+  .skills__container {
+    height: auto;
+    width: 60%;
+    margin: auto;
+
+    .skills__information-flex {
+      height: auto;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: 80px;
+
+      .skills__description {
+        width: auto;
+        margin: 40px 0 0 30px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+
+        .skills__titles {
+          .skills__title {
+            font-weight: 700;
+            font-size: 38px;
+          }
+
+          .skills__subtitle-first {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 28px;
+            text-align: center;
+            line-height: 40px;
+            margin-top: 60px;
+            color: white;
+            background-color: var(--colorblue);
+          }
+        }
+
+        .skills__list-front-end {
+          ul {
+            margin-top: 20px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 30px;
+
+            li {
+              margin-left: 60px;
+              list-style: none;
+
+              .uil-check-circle {
+                color: var(--golden-color);
+              }
+            }
+          }
+        }
+
+        .btn__download {
+          .btn {
+            height: 60px;
+            width: 150px;
+            background-color: var(--colorblue);
+            text-align: center;
+            color: var(--second-color);
+            border-radius: 15px;
+            margin: 60px 0 0 100px;
+            font-size: 20px;
+            cursor: pointer;
+          }
+
+          .btn:hover {
+            background-color: var(--primary-red);
+          }
+        }
+      }
+
+      .skills__img {
+        width: auto;
+        margin: auto;
+        height: auto;
+
+        img {
+          width: 500px;
+          padding-left: 80px;
+          height: 700px;
+        }
+      }
+    }
+  }
+  //===========================project section================================================
+  .project__container {
+    height: auto;
+    max-width: 60%;
+    margin: auto;
+    margin-top: 200px;
+    border-top: var(--border-top);
+
+    .next {
+      width: 600px;
+      margin: auto;
+      margin-top: 180px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .project_title {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        padding-bottom: 50px;
+      }
+
+      .realisation {
+        text-align: center;
+        width: 765px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 34px;
+        letter-spacing: 0.08em;
+        padding-top: 60px;
+        color: var(--primary-red);
+      }
+      .numbers {
+        margin-bottom: 240px;
+        .number {
+          display: inline-block;
+          margin-top: 30px;
+          padding: 10px;
+
+          font-size: 16px;
+          font-family: var(--font-family);
+          font-style: normal;
+          color: var(--colorblue);
+          cursor: pointer;
+        }
+        .number:hover {
+          color: black;
+        }
+      }
+    }
+  }
+
+  //===========================contact section=================================================
+  .contactMe__section {
+    height: auto;
+    border-top: var(--border-top);
+    max-width: 50%;
+    margin: auto;
+    align-items: center;
+    align-content: center;
+    background-color: var(--colorblue);
+    display: flex;
+    display: none;
+    justify-content: space-between;
+    border-radius: 15px;
+
+    .carnet__container {
+      height: 600px;
+      width: 70%;
+      margin: auto;
+      margin-top: 20px;
+
+      .form {
+        height: 500px;
+        width: 90%;
+        margin: 40px 0 0 40px;
+        border: 1px solid #bcbcbc;
+        border-radius: 15px;
+
+        .form__title {
+          text-align: center;
+          color: white;
+          padding-bottom: 20px;
+          margin-bottom: 20px;
+
+          .uil-envelope-check {
+            width: 150px;
+            height: 150px;
+            color: var(--form__color);
+            font-size: 24px;
+          }
+        }
+
+        input,
+        textarea {
+          height: 50px;
+          width: 70%;
+          background-color: var(--colorblue);
+          margin-left: 90px;
+          box-sizing: border-box;
+          border: none;
+          border-bottom: 1px solid rgb(255, 255, 255);
+          opacity: 50%;
+          padding-top: 30px;
+        }
+
+        .btn__submit {
+          margin: 130px 0 0 90px;
+          height: 60px;
+          width: 140px;
+          background-color: var(--colorblue);
+          color: white;
+          font-family: var(--font-family);
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          border: 1px solid white;
+          border-radius: var(--border-fifteen);
+        }
+
+        .btn__submit:hover {
+          background-color: var(--primary-red);
+        }
+
+        input::placeholder,
+        textarea::placeholder {
+          color: white;
+        }
+      }
+    }
+    .soc-container {
+      height: 500px;
+      width: 10%;
+      margin-right: 80px;
+      display: flex;
+      flex-direction: column;
+
+      .whatasapp {
+        height: 100px;
+        width: auto;
+        border: 2px solid #bcbcbc;
+        border-radius: 5px;
+        margin: auto;
+
+        a {
+          .uil-whatsapp {
+            color: white;
+            font-size: 70px;
+          }
+        }
+      }
+      .whatasapp:hover {
+        background-color: var(--primary-red);
+      }
+      .facebook {
+        height: 100px;
+        width: auto;
+        border: 2px solid #bcbcbc;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        margin: auto;
+        a {
+          .uil-facebook {
+            font-size: 70px;
+            color: white;
+          }
+        }
+      }
+      .facebook:hover {
+        background-color: var(--primary-red);
+      }
+      .github {
+        height: 100px;
+        width: auto;
+        border: 2px solid #bcbcbc;
+        border-radius: 5px;
+        margin: auto;
+
+        a {
+          .uil-github {
+            font-size: 70px;
+            color: white;
+          }
+        }
+      }
+      .github:hover {
+        background-color: var(--primary-red);
+      }
+    }
+  }
+  //===========================Footer section===================================================
+  .footer__container {
+    height: 100px;
+    max-width: 100%;
+    background-color: rgb(59, 72, 73);
+    margin-top: 30px;
+
+    .footle__title {
+      color: white;
+      text-align: center;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      padding-top: 30px;
+    }
+  }
+}
 
 @media screen and (max-width: 600px) {
+  .header {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    left: 0;
+    top: 0;
+    // ================================================nav============================================================================
+    .nav {
+      max-width: 600px;
+      background-color: var(--colorblue);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: var(--header-height);
+      position: inherit;
 
-    .header{
+      .redpart {
+        color: var(--primary-red);
+      }
+      .nav__logo {
+        cursor: pointer;
+        margin-left: 40px;
+        font-size: 14px;
+        font-weight: 700;
+        width: 160px;
+      }
+      .nav__logo:hover {
+        color: var(--primary-red);
+      }
 
-        width: 100%;
-        height: auto;
-        position: fixed;
-        left: 0;
-        top: 0;
-// ================================================nav============================================================================
-        .nav{
+      .nav__menu {
+        visibility: hidden;
 
-            max-width: 600px;
-            background-color: var(--colorblue);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            height: var(--header-height);
-            position: inherit;
-           
-            .redpart{
-                color: var(--primary-red);
+        ul {
+          list-style: none;
+
+          li {
+            display: inline-block;
+            padding: 50px;
+
+            a {
+              text-decoration: none;
+              color: var(--first-color);
             }
 
-            .nav__logo{
-
-                cursor: pointer;
-                margin-left: 40px;
-                font-size: 14px;
-                font-weight: 700;
-                width: 160px;
+            a:hover {
+              color: var(--primary-red);
             }
-
-            .nav__logo:hover{
-
-                color: var(--primary-red);
-            }
-
-            .nav__menu{
-
-                visibility: hidden;
-                
-                ul{
-
-                    list-style: none;
-
-                    li{
-
-                        display: inline-block;
-                        padding: 50px;
-
-                        a{
-
-                            text-decoration: none;
-                            color: var(--first-color);      
-                        }
-
-                        a:hover{
-
-                            color: var(--primary-red);
-                        }
-                    }
-                }
-            }
-
-            .nav__btns{
-
-                display: none;
-
-                i{
-                    color: var(--first-color);
-                    margin-right: 60px;
-                    width: 30px;
-                }
-
-                i:hover{
-
-                    color: var(--primary-red);
-                 
-                }
-
-
-                .nav__close, .nav__apps{
-                    display: none;
-
-                }
-            }
-
+          }
         }
+      }
+
+      .nav__btns {
+        display: none;
+
+        i {
+          color: var(--first-color);
+          margin-right: 60px;
+          width: 30px;
+        }
+
+        i:hover {
+          color: var(--primary-red);
+        }
+
+        .nav__close,
+        .nav__apps {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .main {
+    //===========================Home section==================================================
+
+    .home__container {
+      max-width: 100%;
+      min-width: 600px;
+      margin: auto;
+      display: flex;
+      flex-direction: column-reverse;
+      background-color: black;
+      padding-bottom: 40px;
+
+      .home__data {
+        height: auto;
+        width: auto;
+
+        .home__title {
+          font-size: 12px;
+        }
+
+        .home__subtitle {
+          font-size: 36px;
+          color: white;
+        }
+
+        .home__description {
+          font-size: 20px;
+          width: 400px;
+          margin: auto;
+          margin-left: 0;
+          height: auto;
+          text-align: justify;
+          overflow: scroll;
+        }
+
+        .button {
+          color: var(--colorblue);
+          padding-left: 0;
+          font-size: 16px;
+          text-decoration: none;
+          border: 1px solid white;
+          background-color: var(--colorblue);
+          color: white;
+          height: 80px;
+          margin-left: 20px;
+
+          .button:hover {
+            color: #d53c42;
+          }
+        }
+      }
+
+      .home__img {
+        margin-top: 30%;
+        height: auto;
+        width: 100%;
+
+        img {
+          margin-left: 20%;
+        }
+      }
     }
 
-    .main{
+    //===========================About section==================================================
 
-        //===========================Home section==================================================
+    .about__container {
+      width: 100%;
 
-        .home__container{
+      .about__title {
+        width: 400px;
+        height: auto;
+        text-align: center;
+      }
 
-            max-width: 100%;
-            min-width: 600px;
-            margin: auto;
-            display: flex;
-            flex-direction: column-reverse;
-            background-color: black;
-            padding-bottom: 40px;
+      .description__paragraph {
+        .description__flex {
+          margin-top: 80px;
+          margin-left: 0;
+          max-width: 100%;
+          display: flex;
+          flex-direction: column;
 
-            .home__data{
-
-                height: auto;
-                width: auto;
-
-                .home__title{
-
-                    font-size: 12px;
-                }
-
-                .home__subtitle{
-
-                    font-size: 36px;
-                    color: white;
-
-                }
-
-                .home__description{
-
-                    font-size: 20px;
-                    width: 400px;
-                    margin: auto;
-                    margin-left: 0;
-                    height: auto;
-                    text-align: justify;
-                    overflow: scroll;
-                }
-
-                .button{
-
-                    color: var(--colorblue);
-                    padding-left: 0;
-                    font-size: 16px;
-                    text-decoration: none;
-                    border: 1px solid white;
-                    background-color: var(--colorblue);
-                    color: white;
-                    height: 80px;
-                    margin-left: 20px;
-
-                    .button:hover{
-
-                        color: #D53C42;
-                    }
-
-                }   
-
-            }
-
-            .home__img{
-
-                margin-top: 30%;
-                height: auto;
-                width: 100%;
-               
-                img{
-
-                    margin-left: 20%;
-            
-                }
-
-            }
-            
-        }
-
-        //===========================About section==================================================
-
-        .about__container {
-
-            width: 100%;
-
-            .about__title{
-
-                width: 400px;
-                height: auto;     
-                text-align: center;         
-            }
-
-            .description__paragraph{
-
-                .description__flex{
-
-                    margin-top: 80px;
-                    margin-left: 0;
-                    max-width: 100%;
-                    display: flex;
-                    flex-direction: column;
-
-                    .my-description-title{
-
-                        margin: 30px;
-                        height: auto;
-
-                        .description-title{
-
-                            font-size: 18px;
-                            width: auto;
-                            text-align: justify;
-                        }
-
-                        ul{
-
-                            li{
-
-                                margin: 40px;
-                                font-size: 16px;
-                                line-height: 40px;
-                                margin-bottom: 0;
-                                
-                            }
-                        }
-                    }
-
-                    .my-description-list{
-
-                        margin: 30px;
-                        margin-top: 0px;
-                        height: auto;
-
-                        ul{
-
-                            li{
-
-                                margin: 40px;
-                                font-size: 16px;
-                                line-height: 10px;
-                            }
-                        }
-                    }
-
-                }
-
-            }
-        }
-
-        //===========================Skills section=================================================
-        .skills__container{
-
+          .my-description-title {
+            margin: 30px;
             height: auto;
-            width: 100%;
 
-            .skills__information-flex{
-
-                margin: auto;
-                width: 80%;
-                display: flex;
-                flex-direction: column;
-                margin-top: 80px;
-
-                .skills__description{
-
-                    width: auto;
-                    margin-left: 0;
-                    height:auto;
-                    margin-top: 40px;
-                    display: flex;
-                    flex-direction: column;
-
-                    .skills__titles{
-
-                        .skills__title{
-
-                            font-size: 38px;
-                            text-align: center;
-                        
-                        }
-
-                        .skills__subtitle-first{
-
-                            font-size: 32px;
-                            text-align: center;
-                            margin-top: O;
-                            color: var(--primary-red);
-
-                        }
-                    }
-
-                    .skills__list-front-end{
-
-                        ul{
-
-                            li{
-
-                                margin-left: 40px;
-                                margin-right: 40px;
-                                
-                            }
-                        }
-                    }
-
-                    .btn__download{
-                        .btn{
-
-                            margin-top: 80px;
-                            margin-left: 120px;
-                        
-                        }
-                    }
-                }
-
-                .skills__img{
-
-                    width: 70%;
-                    height: auto;
-                    margin-top: 80px;
-
-                }
-
-            }
-        }
-
-        //===========================project section================================================
-
-        .project__container{
- 
-            max-width: 100%;
-            margin: 20px;
-
-            .title__container{
-
-                width: 100%;
-                margin-top: 180px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-
-                .project_title{
- 
-                    font-size: 18px;
-                    text-align: justify;
-                    margin: 20px;
-                }
-
-                img{
-                    width: 60%;
-                }
-
-                a{      
-                    font-size: 24px;
-
-                }
-
-                .next{
-
-                    margin-bottom: 240px;
- 
-                    .next__ul{
-
-                        list-style: none;
-
-                        .next__ul-li{
-
-                            display: inline-block;
-                            margin-top: 20px;
-                            padding: 10px;
-                                                     
-                            a{
-                                text-decoration: none;
-                                font-size: 16px;
-                                font-family: var(--font-family);
-                                font-style: normal;
-                                color: var(--colorblue);
-                            }
-
-                            a:hover{
-
-                                color: black;
-                            }
-                            
-                        }
-                    }
-                }
-
+            .description-title {
+              font-size: 18px;
+              width: auto;
+              text-align: justify;
             }
 
-        }
-
-        //===========================contact section=================================================
-
-        .contactMe__section{
-            
-            height: auto;
-            max-width: 80%;
-            display: block;
-            background-color: var(--colorblue);
-
-            .id__container{
-
-                height: 500px;
-                width: 80%;
-                margin: auto;
-                margin-top: 40px;
+            ul {
+              li {
+                margin: 40px;
+                font-size: 16px;
+                line-height: 40px;
                 margin-bottom: 0;
-                margin-left: 25%;
-                display: block;
+              }
+            }
+          }
 
-                .identity{
+          .my-description-list {
+            margin: 30px;
+            margin-top: 0px;
+            height: auto;
 
-                    width: 80%;
-                    height: 140px;
+            ul {
+              li {
+                margin: 40px;
+                font-size: 16px;
+                line-height: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
 
-                    .id__title{
+    //===========================Skills section=================================================
+    .skills__container {
+      height: auto;
+      width: 100%;
 
-                        padding-top: 20px;
-                        position: inherit;
-                        font-family: var(--font-family);
-                        font-style: normal;
-                        font-weight: 700;
-                        font-size: 30px;
-                        color: white;
+      .skills__information-flex {
+        margin: auto;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 80px;
 
-                    }
-                }
+        .skills__description {
+          width: auto;
+          margin-left: 0;
+          height: auto;
+          margin-top: 40px;
+          display: flex;
+          flex-direction: column;
 
-                .motal__title{
-
-                    width: 80%;
-                    height: auto;
-                    font-family: var(--font-family);
-                    font-style: normal;
-                    font-weight: 300;
-                    color: var(--colorblue);
-
-                }
+          .skills__titles {
+            .skills__title {
+              font-size: 38px;
+              text-align: center;
             }
 
-            .carnet__container{
-
-                height: 600px;
-                width: 80%;
-                margin: auto;
-
-                .form{
-
-                    height: 500px;
-                    width: 100%;
-                    margin: auto;
-                    margin-bottom: 0%;
-
-                    input, textarea {
-
-                        height: 50px;
-                        width: 60%;
-                        background-color: var(--colorblue);
-                    }
-                    .btn__submit{
-
-                        margin-top: 70px;
-                    }
-                  
-                }
+            .skills__subtitle-first {
+              font-size: 32px;
+              text-align: center;
+              margin-top: O;
+              color: var(--primary-red);
             }
-            .soc-container{
+          }
 
-                margin-top: 0;
-                padding-bottom: 40px;
-                display: flex;
-                flex-direction: row;
-                align-items:flex-start;
+          .skills__list-front-end {
+            ul {
+              li {
+                margin-left: 40px;
+                margin-right: 40px;
+              }
+            }
+          }
 
-                height: auto;
-                margin-left: 120px;
-               
-                .whatasapp{
-
-                    height: 70px;
-                    width: auto; 
-                    margin: auto;    
-
-                    a{
-                        .uil-whatsapp{
-
-                            color: white;  
-                            font-size: 60px;     
-                                  
-                           
-                        }
-                    }    
-                } align-content: center;
-
-                .whatasapp:hover{
-                    background-color: var(--primary-red);
-                }
-
-                .facebook{
-
-                    height: 70px;
-                    width: auto;
-                    border: 1px solid #BCBCBC;
-                    margin-bottom: 20px;
-                    border-radius: 5px;
-                    margin: auto;
-
-                    a{
-                        .uil-facebook{
-                
-                            font-size: 60px;
-                            color: white; 
-                        }
-                    }
-                    
-                }
-
-                .facebook:hover{
-                    background-color: var(--primary-red);
-                }
-
-                .github{
-
-                    height: 70px;
-                    width: auto;
-                    border: 1px solid #BCBCBC;
-                    border-radius: 5px;
-                    margin: auto;
-
-                    a{
-                        .uil-github{
-
-                            font-size: 60px;
-                            color: white; 
-                        }
-                    }
-                }
-
-                .github:hover{
-                    background-color: var(--primary-red);
-                }
-            }       
+          .btn__download {
+            .btn {
+              margin-top: 80px;
+              margin-left: 120px;
+            }
+          }
         }
 
-        //===========================Animation section================================================
-        .animation__section{
+        .skills__img {
+          width: 70%;
+          height: auto;
+          margin-top: 80px;
+        }
+      }
+    }
 
-            background: goldenrod;
-            height: 300px;
-            max-width: 100%;
+    //===========================project section================================================
 
-            #container{
+    .project__container {
+      max-width: 100%;
+      margin: 20px;
 
-                width:90%;
-                max-width:700px;
-                margin:1em auto;
-                position:relative;
-                           
-            }      
+      .title__container {
+        width: 100%;
+        margin-top: 180px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .project_title {
+          font-size: 18px;
+          text-align: justify;
+          margin: 20px;
         }
 
-        //===========================Footer section===================================================
+        img {
+          width: 60%;
+        }
 
-        .footer__container{
+        a {
+          font-size: 24px;
+        }
 
-            height: 80px;
-            max-width: 100%;
-            background-color: black;
+        .next {
+          margin-bottom: 240px;
 
+          .next__ul {
+            list-style: none;
 
-            .footle__title{
+            .next__ul-li {
+              display: inline-block;
+              margin-top: 20px;
+              padding: 10px;
 
-                color: white;
-                text-align: center;
+              a {
+                text-decoration: none;
+                font-size: 16px;
                 font-family: var(--font-family);
                 font-style: normal;
-                font-weight: 400;
-                font-size: 16px;
-                padding-top: 30px;
+                color: var(--colorblue);
+              }
+
+              a:hover {
+                color: black;
+              }
             }
+          }
         }
+      }
     }
 
+    //===========================contact section=================================================
+
+    .contactMe__section {
+      height: auto;
+      max-width: 60%;
+      display: block;
+      background-color: var(--colorblue);
+
+      .id__container {
+        height: 500px;
+        width: 80%;
+        margin: auto;
+        margin-top: 40px;
+        margin-bottom: 0;
+        margin-left: 25%;
+        display: block;
+
+        .identity {
+          width: 80%;
+          height: 140px;
+
+          .id__title {
+            padding-top: 20px;
+            position: inherit;
+            font-family: var(--font-family);
+            font-style: normal;
+            font-weight: 700;
+            font-size: 30px;
+            color: white;
+          }
+        }
+
+        .motal__title {
+          width: 80%;
+          height: auto;
+          font-family: var(--font-family);
+          font-style: normal;
+          font-weight: 300;
+          color: var(--colorblue);
+        }
+      }
+
+      .carnet__container {
+        height: 600px;
+        width: 60%;
+        margin: auto;
+
+        .form {
+          height: 500px;
+          width: 70%;
+          margin: auto;
+          margin-bottom: 0%;
+
+          input,
+          textarea {
+            height: 50px;
+            width: 60%;
+            background-color: var(--colorblue);
+          }
+          .btn__submit {
+            margin-top: 70px;
+          }
+        }
+      }
+      .soc-container {
+        margin-top: 0;
+        padding-bottom: 40px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+
+        height: auto;
+        margin-left: 20px;
+
+        .whatasapp {
+          height: 70px;
+          width: auto;
+          margin: auto;
+
+          a {
+            .uil-whatsapp {
+              color: white;
+              font-size: 60px;
+            }
+          }
+        }
+        align-content: center;
+
+        .whatasapp:hover {
+          background-color: var(--primary-red);
+        }
+
+        .facebook {
+          height: 70px;
+          width: auto;
+          border: 1px solid #bcbcbc;
+          margin-bottom: 20px;
+          border-radius: 5px;
+          margin: auto;
+
+          a {
+            .uil-facebook {
+              font-size: 60px;
+              color: white;
+            }
+          }
+        }
+
+        .facebook:hover {
+          background-color: var(--primary-red);
+        }
+
+        .github {
+          height: 70px;
+          width: auto;
+          border: 1px solid #bcbcbc;
+          border-radius: 5px;
+          margin: auto;
+
+          a {
+            .uil-github {
+              font-size: 60px;
+              color: white;
+            }
+          }
+        }
+
+        .github:hover {
+          background-color: var(--primary-red);
+        }
+      }
+    }
+
+    //===========================Animation section================================================
+    .animation__section {
+      background: goldenrod;
+      height: 300px;
+      max-width: 100%;
+
+      #container {
+        width: 90%;
+        max-width: 700px;
+        margin: 1em auto;
+        position: relative;
+      }
+    }
+
+    //===========================Footer section===================================================
+
+    .footer__container {
+      height: 80px;
+      max-width: 100%;
+      background-color: black;
+
+      .footle__title {
+        color: white;
+        text-align: center;
+        font-family: var(--font-family);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        padding-top: 30px;
+      }
+    }
+  }
 }
-  

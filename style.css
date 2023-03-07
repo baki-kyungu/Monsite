@@ -5,11 +5,10 @@
 }
 
 :root {
-  --primary-red: #D53C42;
-  --primary: #D53C42;
+  --primary-red: #d53c42;
   --colorblue: #2596be;
   --body-color: black;
-  --first-color: #BCBCBC;
+  --first-color: #bcbcbc;
   --second-color: white;
   --a-font-size: 24px;
   --header-height: 100px;
@@ -17,19 +16,24 @@
   --font-family: "Open Sans";
   --h2-size: 28px;
   --h1-size: 66px;
-  --description-backgrround: #DADCDF;
-  --border-top: 1px solid #BCBCBC;
+  --description-backgrround: #dadcdf;
+  --border-top: 1px solid #bcbcbc;
   --form__color: white;
   --border-fifteen: 15px;
   --black-color: black;
   --homeSection-background-color: rgb(255, 255, 255);
   --front-padding: 80px;
   --golden-color: goldenrod;
+  --fts-black: black;
   --h2__size-mobile: 16px;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family);
 }
 
 .header {
@@ -80,13 +84,14 @@ html {
 .header .nav .nav__btns i:hover {
   color: var(--primary-red);
 }
-.header .nav .nav__btns .nav__close, .header .nav .nav__btns .nav__apps {
+.header .nav .nav__btns .nav__close,
+.header .nav .nav__btns .nav__apps {
   display: none;
 }
 
 .main .home__container {
   height: auto;
-  max-width: 80%;
+  max-width: 60%;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -95,18 +100,16 @@ html {
 }
 .main .home__container .home__data {
   margin-top: 20%;
-  margin-left: var(--front-padding);
+  margin-left: 0;
   height: auto;
   width: auto;
+  color: var(--black-color);
 }
 .main .home__container .home__data .home__title {
-  color: var(--first-color);
   padding-left: 20px;
-  font-family: var(--font-family);
   font-size: var(--h2-size);
 }
 .main .home__container .home__data .home__subtitle {
-  font-family: var(--font-family);
   font-size: var(--h1-size);
   padding: 18px;
   padding-top: 0px;
@@ -118,28 +121,34 @@ html {
 .main .home__container .home__data .home__description {
   font-size: 24px;
   padding-left: 20px;
-  color: var(--first-color);
-  font-style: var(--font-family);
   padding-bottom: 50px;
-  width: 70%;
+  width: 90%;
+  text-align: justify;
 }
 .main .home__container .home__data .home__link-span {
   color: var(--colorblue);
   text-decoration: none;
 }
 .main .home__container .home__data .button {
-  padding-left: 20px;
-  color: var(--colorblue);
+  width: 150px;
+  height: 60px;
+  margin-left: 20px;
+  display: inline-block;
+  color: var(--second-color);
   font-size: 20px;
+  text-align: center;
   text-decoration: none;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
+  padding-top: 15px;
+  background-color: var(--colorblue);
+  border-radius: 15px;
+  cursor: pointer;
 }
-.main .home__container .home__data .button .button:hover {
-  color: #D53C42;
+.main .home__container .home__data .button:hover {
+  background-color: var(--primary-red);
 }
 .main .home__container .home__img {
-  margin-top: 20%;
-  margin-right: 150px;
+  margin: 20% 120px 0 30px;
   height: auto;
   width: 35%;
 }
@@ -148,16 +157,9 @@ html {
   width: 250px;
   height: 250px;
 }
-.main .home__container .home__scroll {
-  width: 5%;
-  border: 1px solid rebeccapurple;
-  height: 500px;
-  margin-right: 20px;
-  padding-top: 120px;
-}
 .main .about__container {
   height: auto;
-  width: 80%;
+  width: 60%;
   margin: auto;
   border-bottom: 1px solid rgb(163, 163, 163);
 }
@@ -165,19 +167,14 @@ html {
   width: 400px;
   height: auto;
   font-size: 56px;
-  font-family: var(--font-family);
-  margin-bottom: 40px;
-  margin-top: 15%;
-  margin-left: var(--front-padding);
+  margin: 15% 0px 40px 30px;
 }
 .main .about__container .description__paragraph .description__flex {
-  margin-top: 80px;
-  margin-left: 60px;
+  margin-top: 80px 0 60px 60px;
   max-width: 100%;
   height: auto;
   display: flex;
   justify-content: flex-start;
-  margin-bottom: 60px;
 }
 .main .about__container .description__paragraph .description__flex .my-description-title {
   margin: 30px;
@@ -187,16 +184,15 @@ html {
 .main .about__container .description__paragraph .description__flex .my-description-title .description-title {
   padding-top: 20px;
   font-size: 24px;
-  font-family: var(--font-family);
   font-style: normal;
   font-weight: 400px;
   width: 600px;
+  text-align: justify;
 }
 .main .about__container .description__paragraph .description__flex .my-description-title ul li {
   padding-top: 20px;
   margin-left: 100px;
   font-size: 24px;
-  font-family: var(--font-family);
   font-style: normal;
   font-weight: 400px;
   line-height: 20px;
@@ -215,7 +211,6 @@ html {
   padding-top: 20px;
   margin-left: var(--front-padding);
   font-size: 24px;
-  font-family: var(--font-family);
   font-style: normal;
   font-weight: 400px;
   line-height: 20px;
@@ -225,35 +220,28 @@ html {
 }
 .main .skills__container {
   height: auto;
-  width: 80%;
+  width: 60%;
   margin: auto;
 }
 .main .skills__container .skills__information-flex {
   height: auto;
-  margin: auto;
-  background-color: white;
-  width: 90%;
+  width: 100%;
   display: flex;
   justify-content: center;
   margin-top: 80px;
-  align-items: center;
 }
 .main .skills__container .skills__information-flex .skills__description {
   width: auto;
-  margin-left: 50px;
-  height: 900px;
-  margin-top: 40px;
+  margin: 40px 0 0 30px;
+  height: auto;
   display: flex;
   flex-direction: column;
 }
 .main .skills__container .skills__information-flex .skills__description .skills__titles .skills__title {
-  font-family: var(--font-family);
   font-weight: 700;
   font-size: 38px;
-  text-align: center;
 }
 .main .skills__container .skills__information-flex .skills__description .skills__titles .skills__subtitle-first {
-  font-family: var(--font-family);
   font-style: normal;
   font-weight: 400;
   font-size: 28px;
@@ -265,15 +253,13 @@ html {
 }
 .main .skills__container .skills__information-flex .skills__description .skills__list-front-end ul {
   margin-top: 20px;
-  font-family: var(--font-family);
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
-  color: var(--first-color);
 }
 .main .skills__container .skills__information-flex .skills__description .skills__list-front-end ul li {
-  margin-left: 100px;
+  margin-left: 60px;
   list-style: none;
 }
 .main .skills__container .skills__information-flex .skills__description .skills__list-front-end ul li .uil-check-circle {
@@ -284,10 +270,9 @@ html {
   width: 150px;
   background-color: var(--colorblue);
   text-align: center;
-  color: white;
+  color: var(--second-color);
   border-radius: 15px;
-  margin-left: 100px;
-  margin-top: 40px;
+  margin: 60px 0 0 100px;
   font-size: 20px;
   cursor: pointer;
 }
@@ -296,9 +281,8 @@ html {
 }
 .main .skills__container .skills__information-flex .skills__img {
   width: auto;
-  margin: 20px;
-  margin-top: 0;
-  height: 720px;
+  margin: auto;
+  height: auto;
 }
 .main .skills__container .skills__information-flex .skills__img img {
   width: 500px;
@@ -307,10 +291,10 @@ html {
 }
 .main .project__container {
   height: auto;
-  max-width: 80%;
+  max-width: 60%;
   margin: auto;
-  border-top: var(--border-top);
   margin-top: 200px;
+  border-top: var(--border-top);
 }
 .main .project__container .next {
   width: 600px;
@@ -321,7 +305,6 @@ html {
   align-items: center;
 }
 .main .project__container .next .project_title {
-  font-family: var(--font-family);
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -330,7 +313,6 @@ html {
 .main .project__container .next .realisation {
   text-align: center;
   width: 765px;
-  font-family: var(--font-family);
   font-style: normal;
   font-weight: 700;
   font-size: 34px;
@@ -357,65 +339,27 @@ html {
 .main .contactMe__section {
   height: auto;
   border-top: var(--border-top);
-  max-width: 80%;
+  max-width: 50%;
   margin: auto;
-  background-color: rgb(59, 72, 73);
+  align-items: center;
+  align-content: center;
+  background-color: var(--colorblue);
   display: flex;
   display: none;
-  justify-content: center;
+  justify-content: space-between;
   border-radius: 15px;
-  visibility: hidden;
-}
-.main .contactMe__section .id__container {
-  height: 500px;
-  width: auto;
-  margin: auto;
-  margin-top: 60px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.main .contactMe__section .id__container .myProfile {
-  width: 80%;
-  height: 200px;
-}
-.main .contactMe__section .id__container .myProfile img {
-  border-radius: 50%;
-  width: 80%;
-  height: 200px;
-}
-.main .contactMe__section .id__container .identity {
-  width: 80%;
-  height: 140px;
-}
-.main .contactMe__section .id__container .identity .id__title {
-  width: 280px;
-  padding-top: 20px;
-  position: absolute;
-  font-family: var(--font-family);
-  font-style: normal;
-  font-weight: 700;
-  font-size: 30px;
-  color: var(--first-color);
-}
-.main .contactMe__section .id__container .motal__title {
-  width: 80%;
-  height: auto;
-  font-family: var(--font-family);
-  font-style: normal;
-  font-weight: 300;
 }
 .main .contactMe__section .carnet__container {
   height: 600px;
-  width: 40%;
+  width: 70%;
+  margin: auto;
   margin-top: 20px;
 }
 .main .contactMe__section .carnet__container .form {
   height: 500px;
-  width: auto;
-  margin: auto;
-  margin-top: 40px;
-  border: 1px solid #BCBCBC;
+  width: 90%;
+  margin: 40px 0 0 40px;
+  border: 1px solid #bcbcbc;
   border-radius: 15px;
 }
 .main .contactMe__section .carnet__container .form .form__title {
@@ -423,7 +367,6 @@ html {
   color: white;
   padding-bottom: 20px;
   margin-bottom: 20px;
-  font-family: var(--font-family);
 }
 .main .contactMe__section .carnet__container .form .form__title .uil-envelope-check {
   width: 150px;
@@ -431,36 +374,33 @@ html {
   color: var(--form__color);
   font-size: 24px;
 }
-.main .contactMe__section .carnet__container .form input, .main .contactMe__section .carnet__container .form textarea {
+.main .contactMe__section .carnet__container .form input,
+.main .contactMe__section .carnet__container .form textarea {
   height: 50px;
   width: 70%;
-  background-color: rgb(59, 72, 73);
+  background-color: var(--colorblue);
   margin-left: 90px;
   box-sizing: border-box;
-  border: 1px solid rgb(255, 255, 255);
-  border-left: none;
-  border-right: none;
-  border-top: none;
+  border: none;
+  border-bottom: 1px solid rgb(255, 255, 255);
   opacity: 50%;
   padding-top: 30px;
 }
 .main .contactMe__section .carnet__container .form .btn__submit {
-  margin-top: 130px;
-  margin-left: 90px;
+  margin: 130px 0 0 90px;
   height: 60px;
   width: 140px;
-  background-color: var(--primary-red);
+  background-color: var(--colorblue);
   color: white;
   font-family: var(--font-family);
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 20px;
   border: 1px solid white;
   border-radius: var(--border-fifteen);
 }
 .main .contactMe__section .carnet__container .form .btn__submit:hover {
-  color: black;
-  background-color: var(--first-color);
+  background-color: var(--primary-red);
 }
 .main .contactMe__section .carnet__container .form input::-moz-placeholder, .main .contactMe__section .carnet__container .form textarea::-moz-placeholder {
   color: white;
@@ -468,33 +408,27 @@ html {
 .main .contactMe__section .carnet__container .form input:-ms-input-placeholder, .main .contactMe__section .carnet__container .form textarea:-ms-input-placeholder {
   color: white;
 }
-.main .contactMe__section .carnet__container .form input::placeholder, .main .contactMe__section .carnet__container .form textarea::placeholder {
+.main .contactMe__section .carnet__container .form input::placeholder,
+.main .contactMe__section .carnet__container .form textarea::placeholder {
   color: white;
 }
 .main .contactMe__section .soc-container {
   height: 500px;
-  width: auto;
-  margin: auto;
-  margin-top: 50px;
-  margin-right: 250px;
+  width: 10%;
+  margin-right: 80px;
   display: flex;
   flex-direction: column;
 }
 .main .contactMe__section .soc-container .whatasapp {
   height: 100px;
   width: auto;
-  border: 1px solid #BCBCBC;
+  border: 2px solid #bcbcbc;
   border-radius: 5px;
   margin: auto;
 }
-.main .contactMe__section .soc-container .whatasapp a {
-  width: 400px;
-  height: 200px;
-}
 .main .contactMe__section .soc-container .whatasapp a .uil-whatsapp {
   color: white;
-  font-size: 90px;
-  padding-left: 10px;
+  font-size: 70px;
 }
 .main .contactMe__section .soc-container .whatasapp:hover {
   background-color: var(--primary-red);
@@ -502,15 +436,14 @@ html {
 .main .contactMe__section .soc-container .facebook {
   height: 100px;
   width: auto;
-  border: 1px solid #BCBCBC;
+  border: 2px solid #bcbcbc;
   margin-bottom: 20px;
   border-radius: 5px;
   margin: auto;
 }
 .main .contactMe__section .soc-container .facebook a .uil-facebook {
-  font-size: 90px;
+  font-size: 70px;
   color: white;
-  padding-left: 10px;
 }
 .main .contactMe__section .soc-container .facebook:hover {
   background-color: var(--primary-red);
@@ -518,20 +451,19 @@ html {
 .main .contactMe__section .soc-container .github {
   height: 100px;
   width: auto;
-  border: 1px solid #BCBCBC;
+  border: 2px solid #bcbcbc;
   border-radius: 5px;
   margin: auto;
 }
 .main .contactMe__section .soc-container .github a .uil-github {
-  font-size: 90px;
+  font-size: 70px;
   color: white;
-  padding-left: 10px;
 }
 .main .contactMe__section .soc-container .github:hover {
   background-color: var(--primary-red);
 }
 .main .footer__container {
-  height: 80px;
+  height: 100px;
   max-width: 100%;
   background-color: rgb(59, 72, 73);
   margin-top: 30px;
@@ -539,7 +471,6 @@ html {
 .main .footer__container .footle__title {
   color: white;
   text-align: center;
-  font-family: var(--font-family);
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -604,7 +535,8 @@ html {
   .header .nav .nav__btns i:hover {
     color: var(--primary-red);
   }
-  .header .nav .nav__btns .nav__close, .header .nav .nav__btns .nav__apps {
+  .header .nav .nav__btns .nav__close,
+.header .nav .nav__btns .nav__apps {
     display: none;
   }
   .main .home__container {
@@ -648,7 +580,7 @@ html {
     margin-left: 20px;
   }
   .main .home__container .home__data .button .button:hover {
-    color: #D53C42;
+    color: #d53c42;
   }
   .main .home__container .home__img {
     margin-top: 30%;
@@ -785,7 +717,7 @@ html {
   }
   .main .contactMe__section {
     height: auto;
-    max-width: 80%;
+    max-width: 60%;
     display: block;
     background-color: var(--colorblue);
   }
@@ -821,16 +753,17 @@ html {
   }
   .main .contactMe__section .carnet__container {
     height: 600px;
-    width: 80%;
+    width: 60%;
     margin: auto;
   }
   .main .contactMe__section .carnet__container .form {
     height: 500px;
-    width: 100%;
+    width: 70%;
     margin: auto;
     margin-bottom: 0%;
   }
-  .main .contactMe__section .carnet__container .form input, .main .contactMe__section .carnet__container .form textarea {
+  .main .contactMe__section .carnet__container .form input,
+.main .contactMe__section .carnet__container .form textarea {
     height: 50px;
     width: 60%;
     background-color: var(--colorblue);
@@ -845,7 +778,7 @@ html {
     flex-direction: row;
     align-items: flex-start;
     height: auto;
-    margin-left: 120px;
+    margin-left: 20px;
     align-content: center;
   }
   .main .contactMe__section .soc-container .whatasapp {
@@ -863,7 +796,7 @@ html {
   .main .contactMe__section .soc-container .facebook {
     height: 70px;
     width: auto;
-    border: 1px solid #BCBCBC;
+    border: 1px solid #bcbcbc;
     margin-bottom: 20px;
     border-radius: 5px;
     margin: auto;
@@ -878,7 +811,7 @@ html {
   .main .contactMe__section .soc-container .github {
     height: 70px;
     width: auto;
-    border: 1px solid #BCBCBC;
+    border: 1px solid #bcbcbc;
     border-radius: 5px;
     margin: auto;
   }
