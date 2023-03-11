@@ -7,9 +7,7 @@
 :root {
   --primary-red: #d53c42;
   --colorblue: #2596be;
-  --body-color: black;
   --first-color: #bcbcbc;
-  --second-color: white;
   --a-font-size: 24px;
   --header-height: 100px;
   --section-padding: 2rem 0 4 rem;
@@ -18,14 +16,12 @@
   --h1-size: 66px;
   --description-backgrround: #dadcdf;
   --border-top: 1px solid #bcbcbc;
-  --form__color: white;
+  --fts__white: #fff;
   --border-fifteen: 15px;
-  --black-color: black;
   --homeSection-background-color: rgb(255, 255, 255);
   --front-padding: 80px;
-  $red: rgb(36, 77, 0);
-  --golden-color: goldenrod;
-  --fts-black: black;
+  --fts-golden: #daa520;
+  --fts-black: #000;
 
   // ==========================================600px=========================================================
 
@@ -122,18 +118,30 @@ body {
       margin-left: 0;
       height: auto;
       width: auto;
-      color: var(--black-color);
+      color: var(--fts-black);
 
       .home__title {
         padding-left: 20px;
         font-size: var(--h2-size);
       }
 
+      // .home__title::after{
+      //   content: '';
+      //   display: block;
+      //   position: absolute;
+      //   width: 100%;
+      //   height: 100%;
+      //   top: 0;
+      //   left: 0;
+      //   transform: translateX(-100%);
+      //   background: crimson;
+      // }
+
       .home__subtitle {
         font-size: var(--h1-size);
         padding: 18px;
         padding-top: 0px;
-        color: var(--black-color);
+        color: var(--fts-black);
       }
 
       .home__subtitle-span {
@@ -158,7 +166,7 @@ body {
         height: 60px;
         margin-left: 20px;
         display: inline-block;
-        color: var(--second-color);
+        color: var(--fts__white);
         font-size: 20px;
         text-align: center;
         text-decoration: none;
@@ -178,10 +186,16 @@ body {
       margin: 20% 120px 0 30px;
       height: auto;
       width: 35%;
+      
       img {
         border-radius: 50%;
-        width: 250px;
-        height: 250px;
+        width: 320px;
+        height: 330px;
+        border: 8px solid blueviolet;
+        border-top-color: var(--fts-golden);
+        border-left-color: var(--colorblue);
+        border-right-color: var(--primary-red);
+
       }
     }
   }
@@ -296,7 +310,7 @@ body {
             text-align: center;
             line-height: 40px;
             margin-top: 60px;
-            color: white;
+            color: var(--fts__white);
             background-color: var(--colorblue);
           }
         }
@@ -314,7 +328,7 @@ body {
               list-style: none;
 
               .uil-check-circle {
-                color: var(--golden-color);
+                color: var(--fts-golden);
               }
             }
           }
@@ -326,7 +340,7 @@ body {
             width: 150px;
             background-color: var(--colorblue);
             text-align: center;
-            color: var(--second-color);
+            color: var(--fts__white);
             border-radius: 15px;
             margin: 60px 0 0 100px;
             font-size: 20px;
@@ -399,7 +413,7 @@ body {
           cursor: pointer;
         }
         .number:hover {
-          color: black;
+          color: var(--fts-black);
         }
       }
     }
@@ -434,14 +448,14 @@ body {
 
         .form__title {
           text-align: center;
-          color: white;
+          color: var(--fts__white);
           padding-bottom: 20px;
           margin-bottom: 20px;
 
           .uil-envelope-check {
             width: 150px;
             height: 150px;
-            color: var(--form__color);
+            color: var(--fts__white);
             font-size: 24px;
           }
         }
@@ -460,16 +474,16 @@ body {
         }
 
         .btn__submit {
-          margin: 130px 0 0 90px;
+          margin: 90px 0 0 90px;
           height: 60px;
           width: 140px;
           background-color: var(--colorblue);
-          color: white;
+          color: var(--fts__white);
           font-family: var(--font-family);
           font-style: normal;
           font-weight: 400;
           font-size: 20px;
-          border: 1px solid white;
+          border: 1px solid var(--fts__white);
           border-radius: var(--border-fifteen);
         }
 
@@ -479,7 +493,7 @@ body {
 
         input::placeholder,
         textarea::placeholder {
-          color: white;
+          color: var(--fts__white);
         }
       }
     }
@@ -499,7 +513,7 @@ body {
 
         a {
           .uil-whatsapp {
-            color: white;
+            color: var(--fts__white);
             font-size: 70px;
           }
         }
@@ -517,7 +531,7 @@ body {
         a {
           .uil-facebook {
             font-size: 70px;
-            color: white;
+            color: var(--fts__white);
           }
         }
       }
@@ -534,7 +548,7 @@ body {
         a {
           .uil-github {
             font-size: 70px;
-            color: white;
+            color: var(--fts__white);
           }
         }
       }
@@ -551,486 +565,12 @@ body {
     margin-top: 30px;
 
     .footle__title {
-      color: white;
+      color: var(--fts__white);
       text-align: center;
       font-style: normal;
       font-weight: 400;
       font-size: 16px;
       padding-top: 30px;
-    }
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .header {
-    width: 100%;
-    height: auto;
-    position: fixed;
-    left: 0;
-    top: 0;
-    // ================================================nav============================================================================
-    .nav {
-      max-width: 600px;
-      background-color: var(--colorblue);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      height: var(--header-height);
-      position: inherit;
-
-      .redpart {
-        color: var(--primary-red);
-      }
-      .nav__logo {
-        cursor: pointer;
-        margin-left: 40px;
-        font-size: 14px;
-        font-weight: 700;
-        width: 160px;
-      }
-      .nav__logo:hover {
-        color: var(--primary-red);
-      }
-
-      .nav__menu {
-        visibility: hidden;
-
-        ul {
-          list-style: none;
-
-          li {
-            display: inline-block;
-            padding: 50px;
-
-            a {
-              text-decoration: none;
-              color: var(--first-color);
-            }
-
-            a:hover {
-              color: var(--primary-red);
-            }
-          }
-        }
-      }
-
-      .nav__btns {
-        display: none;
-
-        i {
-          color: var(--first-color);
-          margin-right: 60px;
-          width: 30px;
-        }
-
-        i:hover {
-          color: var(--primary-red);
-        }
-
-        .nav__close,
-        .nav__apps {
-          display: none;
-        }
-      }
-    }
-  }
-
-  .main {
-    //===========================Home section==================================================
-
-    .home__container {
-      max-width: 100%;
-      min-width: 600px;
-      margin: auto;
-      display: flex;
-      flex-direction: column-reverse;
-      background-color: black;
-      padding-bottom: 40px;
-
-      .home__data {
-        height: auto;
-        width: auto;
-
-        .home__title {
-          font-size: 12px;
-        }
-
-        .home__subtitle {
-          font-size: 36px;
-          color: white;
-        }
-
-        .home__description {
-          font-size: 20px;
-          width: 400px;
-          margin: auto;
-          margin-left: 0;
-          height: auto;
-          text-align: justify;
-          overflow: scroll;
-        }
-
-        .button {
-          color: var(--colorblue);
-          padding-left: 0;
-          font-size: 16px;
-          text-decoration: none;
-          border: 1px solid white;
-          background-color: var(--colorblue);
-          color: white;
-          height: 80px;
-          margin-left: 20px;
-
-          .button:hover {
-            color: #d53c42;
-          }
-        }
-      }
-
-      .home__img {
-        margin-top: 30%;
-        height: auto;
-        width: 100%;
-
-        img {
-          margin-left: 20%;
-        }
-      }
-    }
-
-    //===========================About section==================================================
-
-    .about__container {
-      width: 100%;
-
-      .about__title {
-        width: 400px;
-        height: auto;
-        text-align: center;
-      }
-
-      .description__paragraph {
-        .description__flex {
-          margin-top: 80px;
-          margin-left: 0;
-          max-width: 100%;
-          display: flex;
-          flex-direction: column;
-
-          .my-description-title {
-            margin: 30px;
-            height: auto;
-
-            .description-title {
-              font-size: 18px;
-              width: auto;
-              text-align: justify;
-            }
-
-            ul {
-              li {
-                margin: 40px;
-                font-size: 16px;
-                line-height: 40px;
-                margin-bottom: 0;
-              }
-            }
-          }
-
-          .my-description-list {
-            margin: 30px;
-            margin-top: 0px;
-            height: auto;
-
-            ul {
-              li {
-                margin: 40px;
-                font-size: 16px;
-                line-height: 10px;
-              }
-            }
-          }
-        }
-      }
-    }
-
-    //===========================Skills section=================================================
-    .skills__container {
-      height: auto;
-      width: 100%;
-
-      .skills__information-flex {
-        margin: auto;
-        width: 80%;
-        display: flex;
-        flex-direction: column;
-        margin-top: 80px;
-
-        .skills__description {
-          width: auto;
-          margin-left: 0;
-          height: auto;
-          margin-top: 40px;
-          display: flex;
-          flex-direction: column;
-
-          .skills__titles {
-            .skills__title {
-              font-size: 38px;
-              text-align: center;
-            }
-
-            .skills__subtitle-first {
-              font-size: 32px;
-              text-align: center;
-              margin-top: O;
-              color: var(--primary-red);
-            }
-          }
-
-          .skills__list-front-end {
-            ul {
-              li {
-                margin-left: 40px;
-                margin-right: 40px;
-              }
-            }
-          }
-
-          .btn__download {
-            .btn {
-              margin-top: 80px;
-              margin-left: 120px;
-            }
-          }
-        }
-
-        .skills__img {
-          width: 70%;
-          height: auto;
-          margin-top: 80px;
-        }
-      }
-    }
-
-    //===========================project section================================================
-
-    .project__container {
-      max-width: 100%;
-      margin: 20px;
-
-      .title__container {
-        width: 100%;
-        margin-top: 180px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        .project_title {
-          font-size: 18px;
-          text-align: justify;
-          margin: 20px;
-        }
-
-        img {
-          width: 60%;
-        }
-
-        a {
-          font-size: 24px;
-        }
-
-        .next {
-          margin-bottom: 240px;
-
-          .next__ul {
-            list-style: none;
-
-            .next__ul-li {
-              display: inline-block;
-              margin-top: 20px;
-              padding: 10px;
-
-              a {
-                text-decoration: none;
-                font-size: 16px;
-                font-family: var(--font-family);
-                font-style: normal;
-                color: var(--colorblue);
-              }
-
-              a:hover {
-                color: black;
-              }
-            }
-          }
-        }
-      }
-    }
-
-    //===========================contact section=================================================
-
-    .contactMe__section {
-      height: auto;
-      max-width: 60%;
-      display: block;
-      background-color: var(--colorblue);
-
-      .id__container {
-        height: 500px;
-        width: 80%;
-        margin: auto;
-        margin-top: 40px;
-        margin-bottom: 0;
-        margin-left: 25%;
-        display: block;
-
-        .identity {
-          width: 80%;
-          height: 140px;
-
-          .id__title {
-            padding-top: 20px;
-            position: inherit;
-            font-family: var(--font-family);
-            font-style: normal;
-            font-weight: 700;
-            font-size: 30px;
-            color: white;
-          }
-        }
-
-        .motal__title {
-          width: 80%;
-          height: auto;
-          font-family: var(--font-family);
-          font-style: normal;
-          font-weight: 300;
-          color: var(--colorblue);
-        }
-      }
-
-      .carnet__container {
-        height: 600px;
-        width: 60%;
-        margin: auto;
-
-        .form {
-          height: 500px;
-          width: 70%;
-          margin: auto;
-          margin-bottom: 0%;
-
-          input,
-          textarea {
-            height: 50px;
-            width: 60%;
-            background-color: var(--colorblue);
-          }
-          .btn__submit {
-            margin-top: 70px;
-          }
-        }
-      }
-      .soc-container {
-        margin-top: 0;
-        padding-bottom: 40px;
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-
-        height: auto;
-        margin-left: 20px;
-
-        .whatasapp {
-          height: 70px;
-          width: auto;
-          margin: auto;
-
-          a {
-            .uil-whatsapp {
-              color: white;
-              font-size: 60px;
-            }
-          }
-        }
-        align-content: center;
-
-        .whatasapp:hover {
-          background-color: var(--primary-red);
-        }
-
-        .facebook {
-          height: 70px;
-          width: auto;
-          border: 1px solid #bcbcbc;
-          margin-bottom: 20px;
-          border-radius: 5px;
-          margin: auto;
-
-          a {
-            .uil-facebook {
-              font-size: 60px;
-              color: white;
-            }
-          }
-        }
-
-        .facebook:hover {
-          background-color: var(--primary-red);
-        }
-
-        .github {
-          height: 70px;
-          width: auto;
-          border: 1px solid #bcbcbc;
-          border-radius: 5px;
-          margin: auto;
-
-          a {
-            .uil-github {
-              font-size: 60px;
-              color: white;
-            }
-          }
-        }
-
-        .github:hover {
-          background-color: var(--primary-red);
-        }
-      }
-    }
-
-    //===========================Animation section================================================
-    .animation__section {
-      background: goldenrod;
-      height: 300px;
-      max-width: 100%;
-
-      #container {
-        width: 90%;
-        max-width: 700px;
-        margin: 1em auto;
-        position: relative;
-      }
-    }
-
-    //===========================Footer section===================================================
-
-    .footer__container {
-      height: 80px;
-      max-width: 100%;
-      background-color: black;
-
-      .footle__title {
-        color: white;
-        text-align: center;
-        font-family: var(--font-family);
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        padding-top: 30px;
-      }
     }
   }
 }
