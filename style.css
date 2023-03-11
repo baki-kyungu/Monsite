@@ -7,9 +7,7 @@
 :root {
   --primary-red: #d53c42;
   --colorblue: #2596be;
-  --body-color: black;
   --first-color: #bcbcbc;
-  --second-color: white;
   --a-font-size: 24px;
   --header-height: 100px;
   --section-padding: 2rem 0 4 rem;
@@ -18,13 +16,12 @@
   --h1-size: 66px;
   --description-backgrround: #dadcdf;
   --border-top: 1px solid #bcbcbc;
-  --form__color: white;
+  --fts__white: #fff;
   --border-fifteen: 15px;
-  --black-color: black;
   --homeSection-background-color: rgb(255, 255, 255);
   --front-padding: 80px;
-  --golden-color: goldenrod;
-  --fts-black: black;
+  --fts-golden: #daa520;
+  --fts-black: #000;
   --h2__size-mobile: 16px;
 }
 
@@ -103,7 +100,7 @@ body {
   margin-left: 0;
   height: auto;
   width: auto;
-  color: var(--black-color);
+  color: var(--fts-black);
 }
 .main .home__container .home__data .home__title {
   padding-left: 20px;
@@ -113,7 +110,7 @@ body {
   font-size: var(--h1-size);
   padding: 18px;
   padding-top: 0px;
-  color: var(--black-color);
+  color: var(--fts-black);
 }
 .main .home__container .home__data .home__subtitle-span {
   color: var(--primary-red);
@@ -134,7 +131,7 @@ body {
   height: 60px;
   margin-left: 20px;
   display: inline-block;
-  color: var(--second-color);
+  color: var(--fts__white);
   font-size: 20px;
   text-align: center;
   text-decoration: none;
@@ -154,8 +151,12 @@ body {
 }
 .main .home__container .home__img img {
   border-radius: 50%;
-  width: 250px;
-  height: 250px;
+  width: 320px;
+  height: 330px;
+  border: 8px solid blueviolet;
+  border-top-color: var(--fts-golden);
+  border-left-color: var(--colorblue);
+  border-right-color: var(--primary-red);
 }
 .main .about__container {
   height: auto;
@@ -248,7 +249,7 @@ body {
   text-align: center;
   line-height: 40px;
   margin-top: 60px;
-  color: white;
+  color: var(--fts__white);
   background-color: var(--colorblue);
 }
 .main .skills__container .skills__information-flex .skills__description .skills__list-front-end ul {
@@ -263,14 +264,14 @@ body {
   list-style: none;
 }
 .main .skills__container .skills__information-flex .skills__description .skills__list-front-end ul li .uil-check-circle {
-  color: var(--golden-color);
+  color: var(--fts-golden);
 }
 .main .skills__container .skills__information-flex .skills__description .btn__download .btn {
   height: 60px;
   width: 150px;
   background-color: var(--colorblue);
   text-align: center;
-  color: var(--second-color);
+  color: var(--fts__white);
   border-radius: 15px;
   margin: 60px 0 0 100px;
   font-size: 20px;
@@ -334,7 +335,7 @@ body {
   cursor: pointer;
 }
 .main .project__container .next .numbers .number:hover {
-  color: black;
+  color: var(--fts-black);
 }
 .main .contactMe__section {
   height: auto;
@@ -364,14 +365,14 @@ body {
 }
 .main .contactMe__section .carnet__container .form .form__title {
   text-align: center;
-  color: white;
+  color: var(--fts__white);
   padding-bottom: 20px;
   margin-bottom: 20px;
 }
 .main .contactMe__section .carnet__container .form .form__title .uil-envelope-check {
   width: 150px;
   height: 150px;
-  color: var(--form__color);
+  color: var(--fts__white);
   font-size: 24px;
 }
 .main .contactMe__section .carnet__container .form input,
@@ -387,30 +388,30 @@ body {
   padding-top: 30px;
 }
 .main .contactMe__section .carnet__container .form .btn__submit {
-  margin: 130px 0 0 90px;
+  margin: 90px 0 0 90px;
   height: 60px;
   width: 140px;
   background-color: var(--colorblue);
-  color: white;
+  color: var(--fts__white);
   font-family: var(--font-family);
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
-  border: 1px solid white;
+  border: 1px solid var(--fts__white);
   border-radius: var(--border-fifteen);
 }
 .main .contactMe__section .carnet__container .form .btn__submit:hover {
   background-color: var(--primary-red);
 }
 .main .contactMe__section .carnet__container .form input::-moz-placeholder, .main .contactMe__section .carnet__container .form textarea::-moz-placeholder {
-  color: white;
+  color: var(--fts__white);
 }
 .main .contactMe__section .carnet__container .form input:-ms-input-placeholder, .main .contactMe__section .carnet__container .form textarea:-ms-input-placeholder {
-  color: white;
+  color: var(--fts__white);
 }
 .main .contactMe__section .carnet__container .form input::placeholder,
 .main .contactMe__section .carnet__container .form textarea::placeholder {
-  color: white;
+  color: var(--fts__white);
 }
 .main .contactMe__section .soc-container {
   height: 500px;
@@ -427,7 +428,7 @@ body {
   margin: auto;
 }
 .main .contactMe__section .soc-container .whatasapp a .uil-whatsapp {
-  color: white;
+  color: var(--fts__white);
   font-size: 70px;
 }
 .main .contactMe__section .soc-container .whatasapp:hover {
@@ -443,7 +444,7 @@ body {
 }
 .main .contactMe__section .soc-container .facebook a .uil-facebook {
   font-size: 70px;
-  color: white;
+  color: var(--fts__white);
 }
 .main .contactMe__section .soc-container .facebook:hover {
   background-color: var(--primary-red);
@@ -457,7 +458,7 @@ body {
 }
 .main .contactMe__section .soc-container .github a .uil-github {
   font-size: 70px;
-  color: white;
+  color: var(--fts__white);
 }
 .main .contactMe__section .soc-container .github:hover {
   background-color: var(--primary-red);
@@ -469,382 +470,10 @@ body {
   margin-top: 30px;
 }
 .main .footer__container .footle__title {
-  color: white;
+  color: var(--fts__white);
   text-align: center;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   padding-top: 30px;
-}
-
-@media screen and (max-width: 600px) {
-  .header {
-    width: 100%;
-    height: auto;
-    position: fixed;
-    left: 0;
-    top: 0;
-  }
-  .header .nav {
-    max-width: 600px;
-    background-color: var(--colorblue);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: var(--header-height);
-    position: inherit;
-  }
-  .header .nav .redpart {
-    color: var(--primary-red);
-  }
-  .header .nav .nav__logo {
-    cursor: pointer;
-    margin-left: 40px;
-    font-size: 14px;
-    font-weight: 700;
-    width: 160px;
-  }
-  .header .nav .nav__logo:hover {
-    color: var(--primary-red);
-  }
-  .header .nav .nav__menu {
-    visibility: hidden;
-  }
-  .header .nav .nav__menu ul {
-    list-style: none;
-  }
-  .header .nav .nav__menu ul li {
-    display: inline-block;
-    padding: 50px;
-  }
-  .header .nav .nav__menu ul li a {
-    text-decoration: none;
-    color: var(--first-color);
-  }
-  .header .nav .nav__menu ul li a:hover {
-    color: var(--primary-red);
-  }
-  .header .nav .nav__btns {
-    display: none;
-  }
-  .header .nav .nav__btns i {
-    color: var(--first-color);
-    margin-right: 60px;
-    width: 30px;
-  }
-  .header .nav .nav__btns i:hover {
-    color: var(--primary-red);
-  }
-  .header .nav .nav__btns .nav__close,
-.header .nav .nav__btns .nav__apps {
-    display: none;
-  }
-  .main .home__container {
-    max-width: 100%;
-    min-width: 600px;
-    margin: auto;
-    display: flex;
-    flex-direction: column-reverse;
-    background-color: black;
-    padding-bottom: 40px;
-  }
-  .main .home__container .home__data {
-    height: auto;
-    width: auto;
-  }
-  .main .home__container .home__data .home__title {
-    font-size: 12px;
-  }
-  .main .home__container .home__data .home__subtitle {
-    font-size: 36px;
-    color: white;
-  }
-  .main .home__container .home__data .home__description {
-    font-size: 20px;
-    width: 400px;
-    margin: auto;
-    margin-left: 0;
-    height: auto;
-    text-align: justify;
-    overflow: scroll;
-  }
-  .main .home__container .home__data .button {
-    color: var(--colorblue);
-    padding-left: 0;
-    font-size: 16px;
-    text-decoration: none;
-    border: 1px solid white;
-    background-color: var(--colorblue);
-    color: white;
-    height: 80px;
-    margin-left: 20px;
-  }
-  .main .home__container .home__data .button .button:hover {
-    color: #d53c42;
-  }
-  .main .home__container .home__img {
-    margin-top: 30%;
-    height: auto;
-    width: 100%;
-  }
-  .main .home__container .home__img img {
-    margin-left: 20%;
-  }
-  .main .about__container {
-    width: 100%;
-  }
-  .main .about__container .about__title {
-    width: 400px;
-    height: auto;
-    text-align: center;
-  }
-  .main .about__container .description__paragraph .description__flex {
-    margin-top: 80px;
-    margin-left: 0;
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-  .main .about__container .description__paragraph .description__flex .my-description-title {
-    margin: 30px;
-    height: auto;
-  }
-  .main .about__container .description__paragraph .description__flex .my-description-title .description-title {
-    font-size: 18px;
-    width: auto;
-    text-align: justify;
-  }
-  .main .about__container .description__paragraph .description__flex .my-description-title ul li {
-    margin: 40px;
-    font-size: 16px;
-    line-height: 40px;
-    margin-bottom: 0;
-  }
-  .main .about__container .description__paragraph .description__flex .my-description-list {
-    margin: 30px;
-    margin-top: 0px;
-    height: auto;
-  }
-  .main .about__container .description__paragraph .description__flex .my-description-list ul li {
-    margin: 40px;
-    font-size: 16px;
-    line-height: 10px;
-  }
-  .main .skills__container {
-    height: auto;
-    width: 100%;
-  }
-  .main .skills__container .skills__information-flex {
-    margin: auto;
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    margin-top: 80px;
-  }
-  .main .skills__container .skills__information-flex .skills__description {
-    width: auto;
-    margin-left: 0;
-    height: auto;
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-  }
-  .main .skills__container .skills__information-flex .skills__description .skills__titles .skills__title {
-    font-size: 38px;
-    text-align: center;
-  }
-  .main .skills__container .skills__information-flex .skills__description .skills__titles .skills__subtitle-first {
-    font-size: 32px;
-    text-align: center;
-    margin-top: O;
-    color: var(--primary-red);
-  }
-  .main .skills__container .skills__information-flex .skills__description .skills__list-front-end ul li {
-    margin-left: 40px;
-    margin-right: 40px;
-  }
-  .main .skills__container .skills__information-flex .skills__description .btn__download .btn {
-    margin-top: 80px;
-    margin-left: 120px;
-  }
-  .main .skills__container .skills__information-flex .skills__img {
-    width: 70%;
-    height: auto;
-    margin-top: 80px;
-  }
-  .main .project__container {
-    max-width: 100%;
-    margin: 20px;
-  }
-  .main .project__container .title__container {
-    width: 100%;
-    margin-top: 180px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .main .project__container .title__container .project_title {
-    font-size: 18px;
-    text-align: justify;
-    margin: 20px;
-  }
-  .main .project__container .title__container img {
-    width: 60%;
-  }
-  .main .project__container .title__container a {
-    font-size: 24px;
-  }
-  .main .project__container .title__container .next {
-    margin-bottom: 240px;
-  }
-  .main .project__container .title__container .next .next__ul {
-    list-style: none;
-  }
-  .main .project__container .title__container .next .next__ul .next__ul-li {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px;
-  }
-  .main .project__container .title__container .next .next__ul .next__ul-li a {
-    text-decoration: none;
-    font-size: 16px;
-    font-family: var(--font-family);
-    font-style: normal;
-    color: var(--colorblue);
-  }
-  .main .project__container .title__container .next .next__ul .next__ul-li a:hover {
-    color: black;
-  }
-  .main .contactMe__section {
-    height: auto;
-    max-width: 60%;
-    display: block;
-    background-color: var(--colorblue);
-  }
-  .main .contactMe__section .id__container {
-    height: 500px;
-    width: 80%;
-    margin: auto;
-    margin-top: 40px;
-    margin-bottom: 0;
-    margin-left: 25%;
-    display: block;
-  }
-  .main .contactMe__section .id__container .identity {
-    width: 80%;
-    height: 140px;
-  }
-  .main .contactMe__section .id__container .identity .id__title {
-    padding-top: 20px;
-    position: inherit;
-    font-family: var(--font-family);
-    font-style: normal;
-    font-weight: 700;
-    font-size: 30px;
-    color: white;
-  }
-  .main .contactMe__section .id__container .motal__title {
-    width: 80%;
-    height: auto;
-    font-family: var(--font-family);
-    font-style: normal;
-    font-weight: 300;
-    color: var(--colorblue);
-  }
-  .main .contactMe__section .carnet__container {
-    height: 600px;
-    width: 60%;
-    margin: auto;
-  }
-  .main .contactMe__section .carnet__container .form {
-    height: 500px;
-    width: 70%;
-    margin: auto;
-    margin-bottom: 0%;
-  }
-  .main .contactMe__section .carnet__container .form input,
-.main .contactMe__section .carnet__container .form textarea {
-    height: 50px;
-    width: 60%;
-    background-color: var(--colorblue);
-  }
-  .main .contactMe__section .carnet__container .form .btn__submit {
-    margin-top: 70px;
-  }
-  .main .contactMe__section .soc-container {
-    margin-top: 0;
-    padding-bottom: 40px;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    height: auto;
-    margin-left: 20px;
-    align-content: center;
-  }
-  .main .contactMe__section .soc-container .whatasapp {
-    height: 70px;
-    width: auto;
-    margin: auto;
-  }
-  .main .contactMe__section .soc-container .whatasapp a .uil-whatsapp {
-    color: white;
-    font-size: 60px;
-  }
-  .main .contactMe__section .soc-container .whatasapp:hover {
-    background-color: var(--primary-red);
-  }
-  .main .contactMe__section .soc-container .facebook {
-    height: 70px;
-    width: auto;
-    border: 1px solid #bcbcbc;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    margin: auto;
-  }
-  .main .contactMe__section .soc-container .facebook a .uil-facebook {
-    font-size: 60px;
-    color: white;
-  }
-  .main .contactMe__section .soc-container .facebook:hover {
-    background-color: var(--primary-red);
-  }
-  .main .contactMe__section .soc-container .github {
-    height: 70px;
-    width: auto;
-    border: 1px solid #bcbcbc;
-    border-radius: 5px;
-    margin: auto;
-  }
-  .main .contactMe__section .soc-container .github a .uil-github {
-    font-size: 60px;
-    color: white;
-  }
-  .main .contactMe__section .soc-container .github:hover {
-    background-color: var(--primary-red);
-  }
-  .main .animation__section {
-    background: goldenrod;
-    height: 300px;
-    max-width: 100%;
-  }
-  .main .animation__section #container {
-    width: 90%;
-    max-width: 700px;
-    margin: 1em auto;
-    position: relative;
-  }
-  .main .footer__container {
-    height: 80px;
-    max-width: 100%;
-    background-color: black;
-  }
-  .main .footer__container .footle__title {
-    color: white;
-    text-align: center;
-    font-family: var(--font-family);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    padding-top: 30px;
-  }
 }/*# sourceMappingURL=style.css.map */
