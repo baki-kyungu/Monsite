@@ -3,6 +3,7 @@
     height: auto;
     left: 0;
     top: 0;
+    width: 100%;
   }
   .header .nav {
     background-color: var(--colorblue);
@@ -360,8 +361,9 @@
   }
   .main .contactMe__section .carnet__container .form .submitBtn {
     margin-top: 60px;
-    margin-left: 5px;
+    margin-left: 20px;
     margin-bottom: 30px;
+    width: 100px;
   }
   .main .contactMe__section .soc-container {
     margin-top: 40px;
@@ -374,5 +376,37 @@
   }
   .main .contactMe__section .soc-container .github a .uil-github {
     font-size: 40px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .main .home__container {
+    max-width: 100%;
+  }
+  .main .home__container .home__data {
+    width: 350px;
+  }
+  .main .home__container .home__data .home__description {
+    margin-left: 0;
+    font-size: 20px;
+  }
+  .main .home__container .home__data .button {
+    height: 50px;
+    margin-left: 100px;
+  }
+  .main .skills__container {
+    width: 100%;
+  }
+  .main .skills__container .skills__information-flex {
+    margin-top: 100px;
+  }
+  .main .skills__container .skills__information-flex .skills__description .btn__download .btn {
+    margin: 80px;
+    margin-left: 120px;
+  }
+  .main .contactMe__section .carnet__container .form .submitBtn {
+    margin-top: 60px;
+    margin-left: 60px;
+    margin-bottom: 28px;
+    width: 100px;
   }
 }/*# sourceMappingURL=mobile.css.map */

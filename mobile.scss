@@ -3,6 +3,7 @@
     height: auto;
     left: 0;
     top: 0;
+    width: 100%;
    
     .nav {
       background-color: var(--colorblue);
@@ -492,8 +493,9 @@
           }
           .submitBtn {
             margin-top: 60px;
-            margin-left: 5px;
+            margin-left: 20px;
             margin-bottom: 30px;
+            width: 100px;
           }
         }
       }
@@ -520,6 +522,65 @@
             .uil-github {
               font-size: 40px;
             }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+
+  .main {
+  
+    .home__container {
+      max-width: 100%;
+
+      .home__data {
+        width: 350px;
+
+        .home__description{
+
+          margin-left: 0;
+          font-size: 20px;
+        }
+
+        .button {
+          height: 50px;
+          margin-left: 100px;
+        }
+      }
+
+    }
+
+    .skills__container {
+      width: 100%;
+
+      .skills__information-flex {
+        margin-top: 100px;
+
+        .skills__description {
+      
+          .btn__download {
+            .btn {
+              margin: 80px;
+              margin-left: 120px;
+            }
+          }
+        }
+      }
+    }
+
+    .contactMe__section {
+
+      .carnet__container {
+        .form {
+          .submitBtn {
+            margin-top: 60px;
+            margin-left: 60px;
+            margin-bottom: 28px;
+            width: 100px;
           }
         }
       }
