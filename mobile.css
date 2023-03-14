@@ -3,6 +3,7 @@
     height: auto;
     left: 0;
     top: 0;
+    width: 100%;
   }
   .header .nav {
     background-color: var(--colorblue);
@@ -383,7 +384,10 @@
   }
   .main .home__container .home__data {
     width: 350px;
+  }
+  .main .home__container .home__data .home__description {
     margin-left: 0;
+    font-size: 20px;
   }
   .main .home__container .home__data .button {
     height: 50px;

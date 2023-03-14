@@ -3,6 +3,7 @@
     height: auto;
     left: 0;
     top: 0;
+    width: 100%;
    
     .nav {
       background-color: var(--colorblue);
@@ -531,7 +532,6 @@
 
 @media screen and (max-width: 480px) {
 
-
   .main {
   
     .home__container {
@@ -539,7 +539,12 @@
 
       .home__data {
         width: 350px;
-        margin-left: 0;
+
+        .home__description{
+
+          margin-left: 0;
+          font-size: 20px;
+        }
 
         .button {
           height: 50px;
