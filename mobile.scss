@@ -3,7 +3,7 @@
     height: auto;
     left: 0;
     top: 0;
-    // ================================================nav============================================================================
+   
     .nav {
       background-color: var(--colorblue);
       display: flex;
@@ -70,8 +70,7 @@
   }
 
   .main {
-    //===========================Home section==================================================
-
+   
     .home__container {
       margin: auto;
       display: flex;
@@ -122,8 +121,6 @@
       }
     }
 
-    //===========================About section==================================================
-
     .about__container {
       margin: auto;
       margin-top: 60px;
@@ -132,9 +129,8 @@
       .about__title {
         width: auto;
         margin-left: 0;
-        height: auto;
         font-size: 36px;
-        text-align: center;
+        text-align: left;
       }
 
       .description__paragraph {
@@ -146,6 +142,7 @@
 
           .my-description-title {
             height: auto;
+            margin-left: 0px;
 
             .description-title {
               font-size: 24px;
@@ -182,7 +179,6 @@
       }
     }
 
-    //===========================Skills section=================================================
     .skills__container {
       height: auto;
       background-color: white;
@@ -239,12 +235,11 @@
           img {
             width: 100%;
             height: auto;
+            padding: 0px;
           }
         }
       }
     }
-
-    //===========================project section================================================
 
     .project__container {
       .next {
@@ -276,8 +271,6 @@
       }
     }
 
-    //===========================contact section=================================================
-
     .contactMe__section {
       height: auto;
       display: flex;
@@ -299,8 +292,9 @@
             width: 80%;
             margin-left: 30px;
             background-color: var(--colorblue);
+
           }
-          .btn__submit {
+          .submitBtn {
             margin-top: 70px;
             margin-left: 80px;
           }
@@ -343,6 +337,188 @@
             .uil-github {
               font-size: 50px;
               color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// =================================Phone==========================================
+@media screen and (max-width: 320px) {
+  .header {
+    // ================================================nav============================================================================
+    .nav {
+      .nav__logo {
+        cursor: pointer;
+      }
+      .nav__logo:hover {
+        color: var(--primary-red);
+      }
+
+      .nav__btns {
+        display: none;
+      }
+    }
+  }
+
+  .main {
+  
+    .home__container {
+      max-width: 100%;
+
+      .home__data {
+        width: 270px;
+        margin-left: 0;
+
+        .button {
+          height: 50px;
+        }
+      }
+
+      .home__img {
+        img {
+          width: 200px;
+          height: 200px;
+        }
+      }
+    }
+
+    .about__container {
+      .about__title {
+        font-size: 26px;
+      }
+
+      .description__paragraph {
+        .description__flex {
+          .my-description-title {
+            .description-title {
+              font-size: 18px;
+              width: 100%;
+            }
+
+            ul {
+              li {
+                margin: 40px;
+                font-size: 18px;
+                line-height: 30px;
+                margin-bottom: 0;
+              }
+            }
+          }
+
+          .my-description-list {
+            width: 250px;
+            margin: 0 20px 40px 0;
+
+            ul {
+              li {
+                margin-left: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+    
+    .skills__container {
+      width: 100%;
+
+      .skills__information-flex {
+        margin-top: 100px;
+
+        .skills__description {
+          .skills__titles {
+            .skills__title {
+              font-size: 30px;
+            }
+            .skills__subtitle-first {
+              font-size: 22px;
+            }
+          }
+
+          .skills__list-front-end {
+            ul {
+              li {
+                margin-left: 40px;
+                margin-right: 40px;
+              }
+            }
+          }
+
+          .btn__download {
+            .btn {
+              margin: 80px;
+            }
+          }
+        }
+
+        .skills__img {
+          margin-top: 100px;
+
+          img {
+            width: 80%;
+            margin: 20px;
+          }
+        }
+      }
+    }
+
+    .project__container {
+      width: 100%;
+      .next {
+        .project_title {
+          font-size: 20px;
+        }
+      }
+    }
+
+    .contactMe__section {
+
+      .carnet__container {
+        margin: 0;
+        height: auto;
+        margin-bottom: 40px;
+
+        .form {
+          margin: 0;
+          height: auto;
+
+          input,
+          textarea {
+            width: 100%;
+            margin-left: 0;
+          }
+          .submitBtn {
+            margin-top: 60px;
+            margin-left: 5px;
+            margin-bottom: 30px;
+          }
+        }
+      }
+      .soc-container {
+        margin-top: 40px;
+
+        .whatasapp {
+          a {
+            .uil-whatsapp {
+              font-size: 40px;
+            }
+          }
+        }
+        .facebook {
+          a {
+            .uil-facebook {
+              font-size: 40px;
+            }
+          }
+        }
+
+        .github {
+          a {
+            .uil-github {
+              font-size: 40px;
             }
           }
         }
