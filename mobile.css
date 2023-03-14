@@ -107,9 +107,8 @@
   .main .about__container .about__title {
     width: auto;
     margin-left: 0;
-    height: auto;
     font-size: 36px;
-    text-align: center;
+    text-align: left;
   }
   .main .about__container .description__paragraph .description__flex {
     margin-top: 20px;
@@ -119,6 +118,7 @@
   }
   .main .about__container .description__paragraph .description__flex .my-description-title {
     height: auto;
+    margin-left: 0px;
   }
   .main .about__container .description__paragraph .description__flex .my-description-title .description-title {
     font-size: 24px;
@@ -186,6 +186,7 @@
   .main .skills__container .skills__information-flex .skills__img img {
     width: 100%;
     height: auto;
+    padding: 0px;
   }
   .main .project__container .next {
     width: 100%;
@@ -231,7 +232,7 @@
     margin-left: 30px;
     background-color: var(--colorblue);
   }
-  .main .contactMe__section .carnet__container .form .btn__submit {
+  .main .contactMe__section .carnet__container .form .submitBtn {
     margin-top: 70px;
     margin-left: 80px;
   }
@@ -265,5 +266,113 @@
   .main .contactMe__section .soc-container .github a .uil-github {
     font-size: 50px;
     color: white;
+  }
+}
+@media screen and (max-width: 320px) {
+  .header .nav .nav__logo {
+    cursor: pointer;
+  }
+  .header .nav .nav__logo:hover {
+    color: var(--primary-red);
+  }
+  .header .nav .nav__btns {
+    display: none;
+  }
+  .main .home__container {
+    max-width: 100%;
+  }
+  .main .home__container .home__data {
+    width: 270px;
+    margin-left: 0;
+  }
+  .main .home__container .home__data .button {
+    height: 50px;
+  }
+  .main .home__container .home__img img {
+    width: 200px;
+    height: 200px;
+  }
+  .main .about__container .about__title {
+    font-size: 26px;
+  }
+  .main .about__container .description__paragraph .description__flex .my-description-title .description-title {
+    font-size: 18px;
+    width: 100%;
+  }
+  .main .about__container .description__paragraph .description__flex .my-description-title ul li {
+    margin: 40px;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 0;
+  }
+  .main .about__container .description__paragraph .description__flex .my-description-list {
+    width: 250px;
+    margin: 0 20px 40px 0;
+  }
+  .main .about__container .description__paragraph .description__flex .my-description-list ul li {
+    margin-left: 10px;
+  }
+  .main .skills__container {
+    width: 100%;
+  }
+  .main .skills__container .skills__information-flex {
+    margin-top: 100px;
+  }
+  .main .skills__container .skills__information-flex .skills__description .skills__titles .skills__title {
+    font-size: 30px;
+  }
+  .main .skills__container .skills__information-flex .skills__description .skills__titles .skills__subtitle-first {
+    font-size: 22px;
+  }
+  .main .skills__container .skills__information-flex .skills__description .skills__list-front-end ul li {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .main .skills__container .skills__information-flex .skills__description .btn__download .btn {
+    margin: 80px;
+  }
+  .main .skills__container .skills__information-flex .skills__img {
+    margin-top: 100px;
+  }
+  .main .skills__container .skills__information-flex .skills__img img {
+    width: 80%;
+    margin: 20px;
+  }
+  .main .project__container {
+    width: 100%;
+  }
+  .main .project__container .next .project_title {
+    font-size: 20px;
+  }
+  .main .contactMe__section .carnet__container {
+    margin: 0;
+    height: auto;
+    margin-bottom: 40px;
+  }
+  .main .contactMe__section .carnet__container .form {
+    margin: 0;
+    height: auto;
+  }
+  .main .contactMe__section .carnet__container .form input,
+.main .contactMe__section .carnet__container .form textarea {
+    width: 100%;
+    margin-left: 0;
+  }
+  .main .contactMe__section .carnet__container .form .submitBtn {
+    margin-top: 60px;
+    margin-left: 5px;
+    margin-bottom: 30px;
+  }
+  .main .contactMe__section .soc-container {
+    margin-top: 40px;
+  }
+  .main .contactMe__section .soc-container .whatasapp a .uil-whatsapp {
+    font-size: 40px;
+  }
+  .main .contactMe__section .soc-container .facebook a .uil-facebook {
+    font-size: 40px;
+  }
+  .main .contactMe__section .soc-container .github a .uil-github {
+    font-size: 40px;
   }
 }/*# sourceMappingURL=mobile.css.map */
