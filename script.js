@@ -18,7 +18,7 @@ contactLink.addEventListener("click", function () {
 const numberElements = document.querySelectorAll(".next .number");
 const imagePaths = [
   "image/image1.png",
-  "image/image2.jpg",
+  "image/image2.png",
   "image/image3.png",
   "image/image4.png",
   "image/image5.png",
@@ -30,7 +30,7 @@ const imagePaths = [
 ];
 const titles = [
   "Une landing page joue un role très important dans le cadre d'une campagne marketing Elle sert donc à informer les internautes sur un aspect précis votre  entreprise et à les inciter à effectuer une manipulation spécifique",
-  "Nous réalisons des applications à fonctionner sur mac, apple",
+  "Nous sommes en train de réaliser notre site d'apprentissage en ligne de la langue anglaise",
   "Le Wireframe pour le restaurant",
   " Le formulaire de contacts permet à nos clients d'ahouter un contact le modifier ou le supprimer du carnet",
   " Happy new funder pour la consultation en communication",
@@ -87,3 +87,38 @@ function sendMail() {
     }
   );
 }
+
+let texte = document.getElementsByClassName("home__subtitle")[0].innerText;
+let nouveauTexte = "";
+let index = texte.length - 1;
+let sens = "inverse";
+
+function supprimerCaractere() {
+  if (index >= 0 && sens === "inverse") {
+    nouveauTexte = texte.substring(0, index);
+    index--;
+  } else if (index === -1 && sens === "inverse") {
+    sens = "normal";
+    index = 0;
+  } else if (index < texte.length && sens === "normal") {
+    nouveauTexte = texte.substring(0, index + 1);
+    index++;
+  } else if (index === texte.length && sens === "normal") {
+    sens = "inverse";
+    index = texte.length - 1;
+  }
+  document.getElementsByClassName("home__subtitle")[0].innerText = nouveauTexte;
+}
+
+let intervalId = setInterval(supprimerCaractere, 120);
+
+const downloadBtn = document.getElementById("btn");
+downloadBtn.addEventListener("click", function () {
+  const link = document.createElement("a");
+  link.setAttribute("download", "bakiResume.pdf");
+  link.setAttribute("href", "src/bakiResume.pdf");
+
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+});

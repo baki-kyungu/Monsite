@@ -36,13 +36,11 @@ body {
   font-family: var(--font-family);
 }
 
-// ================================================header============================================================================
 .header {
   width: 100%;
   height: auto;
   left: 0;
   margin: auto;
-  // ================================================nav============================================================================
   .nav {
     width: 100%;
     background-color: var(--colorblue);
@@ -103,7 +101,6 @@ body {
 }
 
 .main {
-  //===========================Home section==================================================
   .home__container {
     height: auto;
     max-width: 60%;
@@ -124,6 +121,7 @@ body {
         padding-left: 20px;
         font-size: var(--h2-size);
         font-weight: 500;
+        margin-bottom: 20px;
       }
 
       .home__subtitle {
@@ -131,8 +129,8 @@ body {
         padding: 18px;
         padding-top: 0px;
         color: var(--fts-black);
-      }
-      .home__subtitle-span {
+        height: 80px;
+        margin-bottom: 30px;
         color: var(--primary-red);
       }
 
@@ -183,29 +181,10 @@ body {
         border-top-color: var(--fts-golden);
         border-left-color: var(--colorblue);
         border-right-color: var(--primary-red);
-
-        -webkit-animation: 4s linear 0s infinite alternate move_eye;
-        animation: 4s linear 0s infinite alternate move_eye;
-      }
-      @-webkit-keyframes move_eye {
-        from {
-          margin-left: -0%;
-        }
-        to {
-          margin-left: 5%;
-        }
-      }
-      @keyframes move_eye {
-        from {
-          margin-left: -0%;
-        }
-        to {
-          margin-left: 20%;
-        }
       }
     }
   }
-  //===========================About section==================================================
+
   .about__container {
     height: auto;
     width: 60%;
@@ -282,7 +261,7 @@ body {
       }
     }
   }
-  //===========================Skills section=================================================
+
   .skills__container {
     height: auto;
     width: 60%;
@@ -347,6 +326,7 @@ body {
             text-align: center;
             color: var(--fts__white);
             border-radius: 15px;
+            border-color: white;
             margin: 60px 0 0 100px;
             font-size: 20px;
             cursor: pointer;
@@ -371,7 +351,7 @@ body {
       }
     }
   }
-  //===========================project section================================================
+
   .project__container {
     height: auto;
     max-width: 60%;
@@ -424,7 +404,6 @@ body {
     }
   }
 
-  //===========================contact section=================================================
   .contactMe__section {
     height: auto;
     border-top: var(--border-top);
@@ -562,7 +541,7 @@ body {
       }
     }
   }
-  //===========================Footer section===================================================
+
   .footer__container {
     height: 100px;
     max-width: 100%;
@@ -579,4 +558,3 @@ body {
     }
   }
 }
-

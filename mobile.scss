@@ -1,4 +1,4 @@
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 420px) {
   .header {
     height: auto;
     left: 0;
@@ -73,7 +73,9 @@
   .main {
     .home__container {
       margin: auto;
+      margin-left: 0;
       display: flex;
+      max-width: 100%;
       flex-direction: column-reverse;
       background-color: black;
       padding-bottom: 40px;
@@ -89,31 +91,31 @@
         }
 
         .home__subtitle {
-          margin-left: 20px;
           font-size: 28px;
           color: white;
+          margin-left: 0;
         }
 
         .home__description {
-          font-size: 16px;
+          font-size: 20px;
           color: white;
           margin: auto;
-          height: auto;
+          width: 100%;
         }
 
         .button {
           height: 60px;
-          margin-left: 70px;
+          margin-left: 20px;
         }
       }
 
       .home__img {
+        margin-left: 100px;
         margin-top: 20%;
         height: auto;
         width: 300px;
 
         img {
-          margin-left: 20px;
           width: 240px;
           border-top-color: white;
           height: 240px;
@@ -147,6 +149,7 @@
             .description-title {
               font-size: 24px;
               width: 100%;
+              margin: 10px 20px;
             }
 
             ul {
@@ -182,6 +185,9 @@
     .skills__container {
       height: auto;
       background-color: white;
+
+      width: 100%;
+      margin: auto;
 
       .skills__information-flex {
         width: 100%;
@@ -222,7 +228,7 @@
           .btn__download {
             .btn {
               margin-top: 80px;
-              margin-left: 90px;
+              margin-left: 10px;
             }
           }
         }
@@ -242,13 +248,18 @@
     }
 
     .project__container {
+      width: 100%;
+      max-width: 100%;
       .next {
         width: 100%;
         margin-top: 180px;
         align-items: center;
+
         .project_title {
           font-size: 18px;
           text-align: justify;
+
+          margin: 10px 20px;
         }
 
         img {
@@ -275,11 +286,11 @@
       height: auto;
       display: flex;
       flex-direction: column;
-      background-color: var(--colorblue);
+      max-width: 80%;
 
       .carnet__container {
         height: 500px;
-        width: 100%;
+        max-width: 80%;
 
         .form {
           height: 500px;
@@ -291,7 +302,6 @@
             height: 50px;
             width: 80%;
             margin-left: 30px;
-            background-color: var(--colorblue);
           }
           .submitBtn {
             margin-top: 70px;
@@ -304,7 +314,7 @@
         margin-top: 20px;
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
         padding-left: 10px;
         height: auto;
         margin-left: 70px;
