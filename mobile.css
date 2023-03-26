@@ -1,4 +1,4 @@
-@media screen and (min-width: 420px) {
+@media screen and (min-width: 460px) {
   .header {
     height: auto;
     left: 0;
@@ -17,46 +17,17 @@
     color: var(--primary-red);
   }
   .header .nav .nav__logo {
-    cursor: pointer;
     margin-left: 60px;
     font-size: 14px;
     font-weight: 700;
     width: 200px;
   }
-  .header .nav .nav__logo:hover {
-    color: var(--primary-red);
-  }
   .header .nav .nav__menu {
-    visibility: hidden;
-  }
-  .header .nav .nav__menu ul {
-    list-style: none;
-  }
-  .header .nav .nav__menu ul li {
-    display: inline-block;
-    padding: 50px;
-  }
-  .header .nav .nav__menu ul li a {
-    text-decoration: none;
-    color: var(--first-color);
-  }
-  .header .nav .nav__menu ul li a:hover {
-    color: var(--primary-red);
-  }
-  .header .nav .nav__btns {
     display: none;
   }
-  .header .nav .nav__btns i {
-    color: var(--first-color);
-    margin-right: 60px;
-    width: 30px;
-  }
-  .header .nav .nav__btns i:hover {
-    color: var(--primary-red);
-  }
-  .header .nav .nav__btns .nav__close,
-.header .nav .nav__btns .nav__apps {
-    display: none;
+  .header .nav .nav__btns .nav__apps {
+    display: block;
+    border: 1px solid red;
   }
   .main .home__container {
     margin: auto;

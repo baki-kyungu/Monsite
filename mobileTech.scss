@@ -1,48 +1,21 @@
 @media screen and (max-width: 720px) {
   .header {
     .nav {
-      .nav__logo:hover {
-        color: var(--primary-red);
+      .nav__logo {
+        margin-left: 20px;
       }
 
       .nav__menu {
-        visibility: hidden;
-
-        ul {
-          list-style: none;
-
-          li {
-            display: inline-block;
-            padding: 50px;
-
-            a {
-              text-decoration: none;
-              color: var(--first-color);
-            }
-
-            a:hover {
-              color: var(--primary-red);
-            }
-          }
-        }
+        display: none;
       }
 
       .nav__btns {
-        display: none;
-
-        i {
-          color: var(--first-color);
-          margin-right: 60px;
-          width: 30px;
-        }
-
-        i:hover {
-          color: var(--primary-red);
-        }
-
-        .nav__close,
-        .nav__apps {
+        .nav__link {
           display: none;
+        }
+        .uil-align-left-justify {
+          display: flex;
+          margin-right: 10px;
         }
       }
     }
