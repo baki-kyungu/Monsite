@@ -1,4 +1,4 @@
-@media screen and (min-width: 420px) {
+@media screen and (min-width: 460px) {
   .header {
     height: auto;
     left: 0;
@@ -17,54 +17,20 @@
         color: var(--primary-red);
       }
       .nav__logo {
-        cursor: pointer;
         margin-left: 60px;
         font-size: 14px;
         font-weight: 700;
         width: 200px;
       }
-      .nav__logo:hover {
-        color: var(--primary-red);
-      }
 
       .nav__menu {
-        visibility: hidden;
-
-        ul {
-          list-style: none;
-
-          li {
-            display: inline-block;
-            padding: 50px;
-
-            a {
-              text-decoration: none;
-              color: var(--first-color);
-            }
-
-            a:hover {
-              color: var(--primary-red);
-            }
-          }
-        }
+        display: none;
       }
 
       .nav__btns {
-        display: none;
-
-        i {
-          color: var(--first-color);
-          margin-right: 60px;
-          width: 30px;
-        }
-
-        i:hover {
-          color: var(--primary-red);
-        }
-
-        .nav__close,
         .nav__apps {
-          display: none;
+          display: block;
+          border: 1px solid red;
         }
       }
     }

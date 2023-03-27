@@ -82,7 +82,7 @@ body {
   color: var(--primary-red);
 }
 .header .nav .nav__btns .nav__close,
-.header .nav .nav__btns .nav__apps {
+.header .nav .nav__btns .uil-align-left-justify {
   display: none;
 }
 
