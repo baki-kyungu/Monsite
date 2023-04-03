@@ -98,7 +98,7 @@ body {
   margin-top: 20%;
   margin-left: 0;
   height: auto;
-  width: auto;
+  width: 600px;
   color: var(--fts-black);
 }
 .main .home__container .home__data .home__title {
@@ -106,6 +106,7 @@ body {
   font-size: var(--h2-size);
   margin-bottom: 20px;
   font-weight: 800;
+  width: 350px;
 }
 .main .home__container .home__data .home__subtitle {
   font-size: var(--h1-size);
@@ -121,8 +122,8 @@ body {
   font-size: 20px;
   padding-left: 20px;
   padding-bottom: 50px;
-  width: 95%;
   text-align: justify;
+  color: #777;
 }
 .main .home__container .home__data .home__link-span {
   color: var(--colorblue);
@@ -136,10 +137,10 @@ body {
   margin-top: 80px;
   display: inline-block;
   color: var(--colorblue);
-  font-size: 20px;
+  font-size: 12px;
   text-align: center;
   text-decoration: none;
-  padding-top: 15px;
+  padding-top: 20px;
   border: 1px solid var(--colorblue);
   border-radius: 5px;
   cursor: pointer;
@@ -150,7 +151,6 @@ body {
 }
 .main .home__container .home__img {
   margin: 20% 60px 0 30px;
-  height: auto;
   width: 30%;
 }
 .main .home__container .home__img img {
@@ -292,6 +292,7 @@ body {
   text-align: center;
   margin: auto;
   color: var(--fts__white);
+  opacity: 80%;
 }
 .main .skills__container .skl div img {
   width: 160px;
@@ -355,7 +356,7 @@ body {
   width: 765px;
   font-style: normal;
   font-weight: 700;
-  font-size: 34px;
+  font-size: 24px;
   letter-spacing: 0.08em;
   padding-top: 60px;
   color: var(--primary-red);

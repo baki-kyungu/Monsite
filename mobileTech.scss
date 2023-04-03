@@ -22,39 +22,47 @@
   }
 
   .main {
+
     .home__container {
       margin: auto;
       display: flex;
       flex-direction: column-reverse;
       background-color: rgb(0, 0, 0);
       padding-bottom: 40px;
+      
 
       .home__data {
-        height: auto;
+    
         width: 420px;
 
         .home__subtitle {
-          margin-left: 20px;
-          font-size: 28px;
-          color: white;
+
+          font-size: 24px;
+          color: #2596be;
+          text-align: center;
+        }
+
+        .home__title{
+          color: #fff;
+          text-align: center;
         }
 
         .home__description {
+          text-align: justify;
           font-size: 16px;
           color: white;
-          margin: auto;
-          height: auto;
+          margin: 60px;
+         
         }
 
         .button {
-          height: 60px;
-          margin-left: 120px;
+          margin-left: 100px;
         }
       }
 
       .home__img {
         img {
-          margin-left: 20px;
+          margin-left: 40px;
           width: 240px;
           border-top-color: white;
           height: 240px;
@@ -63,7 +71,7 @@
     }
 
     .about__container {
-      width: 100%;
+      width: 80%;
       margin: auto;
       margin-top: 60px;
 
@@ -182,6 +190,14 @@
           }
         }
       }
+
+      .skl{
+        margin: 80px;
+        div{
+          display: inline-block;
+        }
+      }
+  
     }
 
     .project__container {

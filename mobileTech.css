@@ -20,32 +20,34 @@
     padding-bottom: 40px;
   }
   .main .home__container .home__data {
-    height: auto;
     width: 420px;
   }
   .main .home__container .home__data .home__subtitle {
-    margin-left: 20px;
-    font-size: 28px;
-    color: white;
+    font-size: 24px;
+    color: #2596be;
+    text-align: center;
+  }
+  .main .home__container .home__data .home__title {
+    color: #fff;
+    text-align: center;
   }
   .main .home__container .home__data .home__description {
+    text-align: justify;
     font-size: 16px;
     color: white;
-    margin: auto;
-    height: auto;
+    margin: 60px;
   }
   .main .home__container .home__data .button {
-    height: 60px;
-    margin-left: 120px;
+    margin-left: 100px;
   }
   .main .home__container .home__img img {
-    margin-left: 20px;
+    margin-left: 40px;
     width: 240px;
     border-top-color: white;
     height: 240px;
   }
   .main .about__container {
-    width: 100%;
+    width: 80%;
     margin: auto;
     margin-top: 60px;
   }
@@ -135,6 +137,12 @@
     width: 100%;
     height: auto;
     padding: 0px;
+  }
+  .main .skills__container .skl {
+    margin: 80px;
+  }
+  .main .skills__container .skl div {
+    display: inline-block;
   }
   .main .project__container .next {
     width: 100%;
