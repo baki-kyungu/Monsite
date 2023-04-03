@@ -108,7 +108,7 @@ body {
     display: flex;
     justify-content: space-between;
     background-color: var(--homeSection-background-color);
-    border-bottom: 1px solid rgb(163, 163, 163);
+  
 
     .home__data {
       margin-top: 20%;
@@ -116,12 +116,13 @@ body {
       height: auto;
       width: auto;
       color: var(--fts-black);
+      
 
       .home__title {
         padding-left: 20px;
         font-size: var(--h2-size);
-        font-weight: 500;
         margin-bottom: 20px;
+        font-weight: 800;
       }
 
       .home__subtitle {
@@ -132,6 +133,8 @@ body {
         height: 80px;
         margin-bottom: 30px;
         color: var(--primary-red);
+        font-weight: 800;
+      
       }
 
       .home__description {
@@ -148,23 +151,25 @@ body {
       }
 
       .button {
-        width: 150px;
+        width: 180px;
         height: 60px;
         margin-left: 20px;
+        margin-bottom: 60px;
+        margin-top: 80px;
         display: inline-block;
-        color: var(--fts__white);
+        color: var(--colorblue);
         font-size: 20px;
         text-align: center;
         text-decoration: none;
-        margin-bottom: 60px;
         padding-top: 15px;
-        background-color: var(--colorblue);
-        border-radius: 15px;
+        border: 1px solid var(--colorblue);
+        border-radius: 5px;
         cursor: pointer;
       }
 
       .button:hover {
-        background-color: var(--primary-red);
+        background-color: var(--colorblue);
+        color: var(--fts__white);
       }
     }
 
@@ -189,7 +194,6 @@ body {
     height: auto;
     width: 60%;
     margin: auto;
-    border-bottom: 1px solid rgb(163, 163, 163);
 
     .about__title {
       width: 400px;
@@ -264,8 +268,7 @@ body {
 
   .skills__container {
     height: auto;
-    width: 60%;
-    margin: auto;
+    margin: 60px 120px;
 
     .skills__information-flex {
       height: auto;
@@ -273,6 +276,7 @@ body {
       display: flex;
       justify-content: center;
       margin-top: 80px;
+      margin-bottom: 280px;
 
       .skills__description {
         width: auto;
@@ -282,26 +286,34 @@ body {
         flex-direction: column;
 
         .skills__titles {
+          margin-top: 120px;
           .skills__title {
             font-weight: 700;
             font-size: 38px;
+            text-align: center;
+            margin-bottom: 120px;
+            color: var(--colorblue);
+
           }
 
           .skills__subtitle-first {
             font-style: normal;
-            font-weight: 400;
+            font-weight: 700;
             font-size: 28px;
-            text-align: center;
+            text-align: left;
             line-height: 40px;
             margin-top: 60px;
-            color: var(--fts__white);
-            background-color: var(--colorblue);
+            margin-left: 60px;
+            color: var(--fts-black);
+           
           }
         }
 
         .skills__list-front-end {
+
+          display: flex;
           ul {
-            margin-top: 20px;
+            margin-top: 100px;
             font-style: normal;
             font-weight: 400;
             font-size: 20px;
@@ -316,39 +328,74 @@ body {
               }
             }
           }
-        }
 
-        .btn__download {
-          .btn {
-            height: 60px;
-            width: 150px;
-            background-color: var(--colorblue);
-            text-align: center;
-            color: var(--fts__white);
-            border-radius: 15px;
-            border-color: white;
-            margin: 60px 0 0 100px;
-            font-size: 20px;
-            cursor: pointer;
-          }
+          .img-container{
+            .img-uix{
 
-          .btn:hover {
-            background-color: var(--primary-red);
+              width: 400px;
+              margin-left: 40px;
+            }
           }
         }
+
       }
 
-      .skills__img {
-        width: auto;
+    
+    }
+
+    .skl{
+
+      width: auto;
+      margin: 140px 220px;
+      
+
+      div{
+        width: 280px;
+        display: inline-block;
+        text-align: center;
         margin: auto;
-        height: auto;
+        color: var(--fts__white);
 
-        img {
-          width: 500px;
-          padding-left: 80px;
-          height: 700px;
+        img{
+          width: 160px;
+          margin-top: 20px;
+          margin-bottom: 10px;
+          transition: transform 0.4s ease-in-out;
         }
+
+        img:hover {
+          transform: scale(1.1);
+        }
+        h1{
+          
+          font-size: 24px;
+          font-family: var(--font-family);
+          padding-bottom: 20px;
+         
+        }
+  
       }
+    }
+
+    .btn__download{
+      margin: auto;
+      text-align: center;
+
+      .btn {
+        height: 60px;
+        width: 150px;
+        background-color: var(--colorblue);
+        text-align: center;
+        color: var(--fts__white);
+        border-color: white;
+        font-size: 20px;
+        cursor: pointer;
+      }
+
+      .btn:hover {
+        background-color: var(--primary-red);
+      }
+    
     }
   }
 
@@ -357,7 +404,6 @@ body {
     max-width: 60%;
     margin: auto;
     margin-top: 200px;
-    border-top: var(--border-top);
 
     .next {
       width: 600px;
@@ -372,6 +418,14 @@ body {
         font-weight: 400;
         font-size: 24px;
         padding-bottom: 50px;
+      }
+
+      img {
+        transition: transform 0.4s ease-in-out;
+      }
+
+      img:hover {
+        transform: scale(1.1);
       }
 
       .realisation {
@@ -541,20 +595,20 @@ body {
       }
     }
   }
+}
 
-  .footer__container {
-    height: 100px;
-    max-width: 100%;
-    background-color: rgb(59, 72, 73);
-    margin-top: 30px;
+.footer__container {
+  height: 100px;
+  max-width: 100%;
+  background-color: rgb(59, 72, 73);
+  margin-top: 30px;
 
-    .footle__title {
-      color: var(--fts__white);
-      text-align: center;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      padding-top: 30px;
-    }
+  .footle__title {
+    color: var(--fts__white);
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    padding-top: 30px;
   }
 }

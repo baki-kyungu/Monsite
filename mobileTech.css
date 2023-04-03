@@ -115,6 +115,9 @@
     margin-top: O;
     color: var(--primary-red);
   }
+  .main .skills__container .skills__information-flex .skills__description .skills__list-front-end {
+    display: inline-block;
+  }
   .main .skills__container .skills__information-flex .skills__description .skills__list-front-end ul li {
     margin-left: 40px;
     margin-right: 40px;
