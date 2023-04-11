@@ -173,6 +173,10 @@ body {
   font-size: 56px;
   margin: 15% 0px 40px 30px;
 }
+.main .about__container .description__paragraph {
+  color: #777;
+  font-size: 20px;
+}
 .main .about__container .description__paragraph .description__flex {
   margin-top: 80px 0 60px 60px;
   max-width: 100%;
@@ -187,7 +191,6 @@ body {
 }
 .main .about__container .description__paragraph .description__flex .my-description-title .description-title {
   padding-top: 20px;
-  font-size: 24px;
   font-style: normal;
   font-weight: 400px;
   width: 600px;
@@ -196,7 +199,6 @@ body {
 .main .about__container .description__paragraph .description__flex .my-description-title ul li {
   padding-top: 20px;
   margin-left: 100px;
-  font-size: 24px;
   font-style: normal;
   font-weight: 400px;
   line-height: 20px;
@@ -214,7 +216,6 @@ body {
   list-style: none;
   padding-top: 20px;
   margin-left: var(--front-padding);
-  font-size: 24px;
   font-style: normal;
   font-weight: 400px;
   line-height: 20px;
@@ -263,12 +264,13 @@ body {
 }
 .main .skills__container .skills__information-flex .skills__description .skills__list-front-end {
   display: flex;
+  color: #777;
+  font-size: 20px;
 }
 .main .skills__container .skills__information-flex .skills__description .skills__list-front-end ul {
   margin-top: 100px;
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
   line-height: 30px;
 }
 .main .skills__container .skills__information-flex .skills__description .skills__list-front-end ul li {
@@ -318,7 +320,8 @@ body {
   background-color: var(--colorblue);
   text-align: center;
   color: var(--fts__white);
-  border-color: white;
+  border-color: var(--colorblue);
+  border-radius: 5px;
   font-size: 20px;
   cursor: pointer;
 }
@@ -380,11 +383,13 @@ body {
 .main .contactMe__section {
   height: auto;
   border-top: var(--border-top);
+  border: 1px solid var(--first-color);
   max-width: 50%;
   margin: auto;
+  margin-bottom: 120px;
   align-items: center;
   align-content: center;
-  background-color: var(--colorblue);
+  background-color: var(--fts__white);
   display: flex;
   display: none;
   justify-content: space-between;
@@ -400,30 +405,29 @@ body {
   height: 500px;
   width: 90%;
   margin: 40px 0 0 40px;
-  border: 1px solid #bcbcbc;
   border-radius: 15px;
 }
 .main .contactMe__section .carnet__container .form .form__title {
   text-align: center;
-  color: var(--fts__white);
+  color: var(--first-color);
   padding-bottom: 20px;
   margin-bottom: 20px;
 }
 .main .contactMe__section .carnet__container .form .form__title .uil-envelope-check {
   width: 150px;
   height: 150px;
-  color: var(--fts__white);
+  color: var(--first-color);
   font-size: 24px;
 }
 .main .contactMe__section .carnet__container .form input,
 .main .contactMe__section .carnet__container .form textarea {
   height: 50px;
   width: 70%;
-  background-color: var(--colorblue);
+  background-color: var(--fts__white);
   margin-left: 90px;
   box-sizing: border-box;
   border: none;
-  border-bottom: 1px solid rgb(255, 255, 255);
+  border-bottom: 1px solid var(--first-color);
   opacity: 100%;
   padding-top: 30px;
 }
@@ -431,27 +435,27 @@ body {
   margin: 90px 0 0 90px;
   height: 60px;
   width: 140px;
-  background-color: var(--colorblue);
-  color: var(--fts__white);
+  background-color: var(--fts__white);
+  color: var(--first-color);
   font-family: var(--font-family);
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
-  border: 1px solid var(--fts__white);
+  border: 1px solid var(--first-color);
   border-radius: var(--border-fifteen);
 }
 .main .contactMe__section .carnet__container .form .submitBtn:hover {
   background-color: var(--primary-red);
 }
 .main .contactMe__section .carnet__container .form input::-moz-placeholder, .main .contactMe__section .carnet__container .form textarea::-moz-placeholder {
-  color: var(--fts__white);
+  color: var(--first-color);
 }
 .main .contactMe__section .carnet__container .form input:-ms-input-placeholder, .main .contactMe__section .carnet__container .form textarea:-ms-input-placeholder {
-  color: var(--fts__white);
+  color: var(--first-color);
 }
 .main .contactMe__section .carnet__container .form input::placeholder,
 .main .contactMe__section .carnet__container .form textarea::placeholder {
-  color: var(--fts__white);
+  color: var(--first-color);
 }
 .main .contactMe__section .soc-container {
   height: 500px;
@@ -468,7 +472,7 @@ body {
   margin: auto;
 }
 .main .contactMe__section .soc-container .whatasapp a .uil-whatsapp {
-  color: var(--fts__white);
+  color: var(--first-color);
   font-size: 70px;
 }
 .main .contactMe__section .soc-container .whatasapp:hover {
@@ -484,7 +488,7 @@ body {
 }
 .main .contactMe__section .soc-container .facebook a .uil-facebook {
   font-size: 70px;
-  color: var(--fts__white);
+  color: var(--first-color);
 }
 .main .contactMe__section .soc-container .facebook:hover {
   background-color: var(--primary-red);
@@ -498,7 +502,7 @@ body {
 }
 .main .contactMe__section .soc-container .github a .uil-github {
   font-size: 70px;
-  color: var(--fts__white);
+  color: var(--first-color);
 }
 .main .contactMe__section .soc-container .github:hover {
   background-color: var(--primary-red);
