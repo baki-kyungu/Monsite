@@ -108,14 +108,13 @@ body {
     display: flex;
     justify-content: space-between;
     background-color: var(--homeSection-background-color);
-    
+
     .home__data {
       margin-top: 20%;
       margin-left: 0;
       height: auto;
       width: 600px;
       color: var(--fts-black);
-      
 
       .home__title {
         padding-left: 20px;
@@ -134,7 +133,6 @@ body {
         margin-bottom: 30px;
         color: var(--primary-red);
         font-weight: 800;
-      
       }
 
       .home__description {
@@ -202,6 +200,8 @@ body {
     }
 
     .description__paragraph {
+      color: #777;
+      font-size: 20px;
       .description__flex {
         margin-top: 80px 0 60px 60px;
         max-width: 100%;
@@ -216,7 +216,6 @@ body {
 
           .description-title {
             padding-top: 20px;
-            font-size: 24px;
             font-style: normal;
             font-weight: 400px;
             width: 600px;
@@ -227,7 +226,6 @@ body {
             li {
               padding-top: 20px;
               margin-left: 100px;
-              font-size: 24px;
               font-style: normal;
               font-weight: 400px;
               line-height: 20px;
@@ -250,7 +248,6 @@ body {
               list-style: none;
               padding-top: 20px;
               margin-left: var(--front-padding);
-              font-size: 24px;
               font-style: normal;
               font-weight: 400px;
               line-height: 20px;
@@ -283,7 +280,6 @@ body {
         height: auto;
         display: flex;
         flex-direction: column;
-        
 
         .skills__titles {
           margin-top: 120px;
@@ -293,7 +289,6 @@ body {
             text-align: center;
             margin-bottom: 120px;
             color: var(--colorblue);
-
           }
 
           .skills__subtitle-first {
@@ -305,18 +300,17 @@ body {
             margin-top: 60px;
             margin-left: 60px;
             color: var(--fts-black);
-           
           }
         }
 
         .skills__list-front-end {
-
           display: flex;
+          color: #777;
+          font-size: 20px;
           ul {
             margin-top: 100px;
             font-style: normal;
             font-weight: 400;
-            font-size: 20px;
             line-height: 30px;
 
             li {
@@ -329,27 +323,21 @@ body {
             }
           }
 
-          .img-container{
-            .img-uix{
-
+          .img-container {
+            .img-uix {
               width: 400px;
               margin-left: 40px;
             }
           }
         }
-
       }
-
-    
     }
 
-    .skl{
-
+    .skl {
       width: auto;
       margin: 140px 220px;
-      
 
-      div{
+      div {
         width: 280px;
         display: inline-block;
         text-align: center;
@@ -357,7 +345,7 @@ body {
         color: var(--fts__white);
         opacity: 80%;
 
-        img{
+        img {
           width: 160px;
           margin-top: 20px;
           margin-bottom: 10px;
@@ -367,18 +355,15 @@ body {
         img:hover {
           transform: scale(1.1);
         }
-        h1{
-          
+        h1 {
           font-size: 24px;
           font-family: var(--font-family);
           padding-bottom: 20px;
-         
         }
-  
       }
     }
 
-    .btn__download{
+    .btn__download {
       margin: auto;
       text-align: center;
 
@@ -388,7 +373,8 @@ body {
         background-color: var(--colorblue);
         text-align: center;
         color: var(--fts__white);
-        border-color: white;
+        border-color: var(--colorblue);
+        border-radius: 5px;
         font-size: 20px;
         cursor: pointer;
       }
@@ -396,7 +382,6 @@ body {
       .btn:hover {
         background-color: var(--primary-red);
       }
-    
     }
   }
 
@@ -462,11 +447,13 @@ body {
   .contactMe__section {
     height: auto;
     border-top: var(--border-top);
+    border: 1px solid var(--first-color);
     max-width: 50%;
     margin: auto;
+    margin-bottom: 120px;
     align-items: center;
     align-content: center;
-    background-color: var(--colorblue);
+    background-color: var(--fts__white);
     display: flex;
     display: none;
     justify-content: space-between;
@@ -482,19 +469,18 @@ body {
         height: 500px;
         width: 90%;
         margin: 40px 0 0 40px;
-        border: 1px solid #bcbcbc;
         border-radius: 15px;
 
         .form__title {
           text-align: center;
-          color: var(--fts__white);
+          color: var(--first-color);
           padding-bottom: 20px;
           margin-bottom: 20px;
 
           .uil-envelope-check {
             width: 150px;
             height: 150px;
-            color: var(--fts__white);
+            color: var(--first-color);
             font-size: 24px;
           }
         }
@@ -503,11 +489,11 @@ body {
         textarea {
           height: 50px;
           width: 70%;
-          background-color: var(--colorblue);
+          background-color: var(--fts__white);
           margin-left: 90px;
           box-sizing: border-box;
           border: none;
-          border-bottom: 1px solid rgb(255, 255, 255);
+          border-bottom: 1px solid var(--first-color);
           opacity: 100%;
           padding-top: 30px;
         }
@@ -516,13 +502,13 @@ body {
           margin: 90px 0 0 90px;
           height: 60px;
           width: 140px;
-          background-color: var(--colorblue);
-          color: var(--fts__white);
+          background-color: var(--fts__white);
+          color: var(--first-color);
           font-family: var(--font-family);
           font-style: normal;
           font-weight: 400;
           font-size: 20px;
-          border: 1px solid var(--fts__white);
+          border: 1px solid var(--first-color);
           border-radius: var(--border-fifteen);
         }
 
@@ -532,7 +518,7 @@ body {
 
         input::placeholder,
         textarea::placeholder {
-          color: var(--fts__white);
+          color: var(--first-color);
         }
       }
     }
@@ -552,7 +538,7 @@ body {
 
         a {
           .uil-whatsapp {
-            color: var(--fts__white);
+            color: var(--first-color);
             font-size: 70px;
           }
         }
@@ -570,7 +556,7 @@ body {
         a {
           .uil-facebook {
             font-size: 70px;
-            color: var(--fts__white);
+            color: var(--first-color);
           }
         }
       }
@@ -587,7 +573,7 @@ body {
         a {
           .uil-github {
             font-size: 70px;
-            color: var(--fts__white);
+            color: var(--first-color);
           }
         }
       }
