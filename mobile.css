@@ -208,7 +208,7 @@
     margin: auto;
   }
   .main .contactMe__section .carnet__container .form input,
-.main .contactMe__section .carnet__container .form textarea {
+  .main .contactMe__section .carnet__container .form textarea {
     height: 50px;
     width: 80%;
     margin-left: 30px;
@@ -335,7 +335,7 @@
     height: auto;
   }
   .main .contactMe__section .carnet__container .form input,
-.main .contactMe__section .carnet__container .form textarea {
+  .main .contactMe__section .carnet__container .form textarea {
     width: 100%;
     margin-left: 0;
   }
