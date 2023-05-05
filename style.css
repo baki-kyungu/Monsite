@@ -108,6 +108,7 @@ body {
   font-weight: 800;
   width: 350px;
 }
+
 .main .home__container .home__data .home__subtitle {
   font-size: var(--h1-size);
   padding: 18px;
@@ -184,19 +185,34 @@ body {
   display: flex;
   justify-content: flex-start;
 }
-.main .about__container .description__paragraph .description__flex .my-description-title {
+.main
+  .about__container
+  .description__paragraph
+  .description__flex
+  .my-description-title {
   margin: 30px;
   width: auto;
   height: 350px;
 }
-.main .about__container .description__paragraph .description__flex .my-description-title .description-title {
+.main
+  .about__container
+  .description__paragraph
+  .description__flex
+  .my-description-title
+  .description-title {
   padding-top: 20px;
   font-style: normal;
   font-weight: 400px;
   width: 600px;
   text-align: justify;
 }
-.main .about__container .description__paragraph .description__flex .my-description-title ul li {
+.main
+  .about__container
+  .description__paragraph
+  .description__flex
+  .my-description-title
+  ul
+  li {
   padding-top: 20px;
   margin-left: 100px;
   font-style: normal;
@@ -204,15 +220,32 @@ body {
   line-height: 20px;
   list-style: none;
 }
-.main .about__container .description__paragraph .description__flex .my-description-title ul li .uil-check-circle {
+.main
+  .about__container
+  .description__paragraph
+  .description__flex
+  .my-description-title
+  ul
+  li
+  .uil-check-circle {
   color: goldenrod;
 }
-.main .about__container .description__paragraph .description__flex .my-description-list {
+.main
+  .about__container
+  .description__paragraph
+  .description__flex
+  .my-description-list {
   width: 35%;
   height: 350px;
   margin: 30px;
 }
-.main .about__container .description__paragraph .description__flex .my-description-list ul li {
+.main
+  .about__container
+  .description__paragraph
+  .description__flex
+  .my-description-list
+  ul
+  li {
   list-style: none;
   padding-top: 20px;
   margin-left: var(--front-padding);
@@ -220,7 +253,14 @@ body {
   font-weight: 400px;
   line-height: 20px;
 }
-.main .about__container .description__paragraph .description__flex .my-description-list ul li .uil-check-circle {
+.main
+  .about__container
+  .description__paragraph
+  .description__flex
+  .my-description-list
+  ul
+  li
+  .uil-check-circle {
   color: goldenrod;
 }
 .main .skills__container {
@@ -242,17 +282,31 @@ body {
   display: flex;
   flex-direction: column;
 }
-.main .skills__container .skills__information-flex .skills__description .skills__titles {
+.main
+  .skills__container
+  .skills__information-flex
+  .skills__description
+  .skills__titles {
   margin-top: 120px;
 }
-.main .skills__container .skills__information-flex .skills__description .skills__titles .skills__title {
+.main
+  .skills__container
+  .skills__information-flex
+  .skills__description
+  .skills__titles
+  .skills__title {
   font-weight: 700;
   font-size: 38px;
   text-align: center;
   margin-bottom: 120px;
   color: var(--colorblue);
 }
-.main .skills__container .skills__information-flex .skills__description .skills__titles .skills__subtitle-first {
+.main
+  .skills__container
+  .skills__information-flex
+  .skills__description
+  .skills__titles
+  .skills__subtitle-first {
   font-style: normal;
   font-weight: 700;
   font-size: 28px;
@@ -262,25 +316,53 @@ body {
   margin-left: 60px;
   color: var(--fts-black);
 }
-.main .skills__container .skills__information-flex .skills__description .skills__list-front-end {
+.main
+  .skills__container
+  .skills__information-flex
+  .skills__description
+  .skills__list-front-end {
   display: flex;
   color: #777;
   font-size: 20px;
 }
-.main .skills__container .skills__information-flex .skills__description .skills__list-front-end ul {
+.main
+  .skills__container
+  .skills__information-flex
+  .skills__description
+  .skills__list-front-end
+  ul {
   margin-top: 100px;
   font-style: normal;
   font-weight: 400;
   line-height: 30px;
 }
-.main .skills__container .skills__information-flex .skills__description .skills__list-front-end ul li {
+.main
+  .skills__container
+  .skills__information-flex
+  .skills__description
+  .skills__list-front-end
+  ul
+  li {
   margin-left: 60px;
   list-style: none;
 }
-.main .skills__container .skills__information-flex .skills__description .skills__list-front-end ul li .uil-check-circle {
+.main
+  .skills__container
+  .skills__information-flex
+  .skills__description
+  .skills__list-front-end
+  ul
+  li
+  .uil-check-circle {
   color: var(--fts-golden);
 }
-.main .skills__container .skills__information-flex .skills__description .skills__list-front-end .img-container .img-uix {
+.main
+  .skills__container
+  .skills__information-flex
+  .skills__description
+  .skills__list-front-end
+  .img-container
+  .img-uix {
   width: 400px;
   margin-left: 40px;
 }
@@ -413,7 +495,12 @@ body {
   padding-bottom: 20px;
   margin-bottom: 20px;
 }
-.main .contactMe__section .carnet__container .form .form__title .uil-envelope-check {
+.main
+  .contactMe__section
+  .carnet__container
+  .form
+  .form__title
+  .uil-envelope-check {
   width: 150px;
   height: 150px;
   color: var(--first-color);
@@ -447,10 +534,16 @@ body {
 .main .contactMe__section .carnet__container .form .submitBtn:hover {
   background-color: var(--primary-red);
 }
-.main .contactMe__section .carnet__container .form input::-moz-placeholder, .main .contactMe__section .carnet__container .form textarea::-moz-placeholder {
+.main .contactMe__section .carnet__container .form input::-moz-placeholder,
+.main .contactMe__section .carnet__container .form textarea::-moz-placeholder {
   color: var(--first-color);
 }
-.main .contactMe__section .carnet__container .form input:-ms-input-placeholder, .main .contactMe__section .carnet__container .form textarea:-ms-input-placeholder {
+.main .contactMe__section .carnet__container .form input:-ms-input-placeholder,
+.main
+  .contactMe__section
+  .carnet__container
+  .form
+  textarea:-ms-input-placeholder {
   color: var(--first-color);
 }
 .main .contactMe__section .carnet__container .form input::placeholder,
@@ -521,4 +614,4 @@ body {
   font-weight: 400;
   font-size: 16px;
   padding-top: 30px;
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
