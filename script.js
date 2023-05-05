@@ -123,18 +123,30 @@ downloadBtn.addEventListener("click", function () {
   document.body.removeChild(link);
 });
 
-
-
-
 // ==============================================skl=======================================================
-const sklDiv = document.querySelector('.skl');
-const sklDivs = sklDiv.querySelectorAll('div');
+const sklDiv = document.querySelector(".skl");
+const sklDivs = sklDiv.querySelectorAll("div");
 
-const colors = ['red', 'green', 'blue', 'yellow', 'purple', 'orange', 'gray', 'pink', 'brown', 'teal', 'black', 'navy', 'olive', 'maroon', 'lime', 'fuchsia'];
+const colors = [
+  "red",
+  "green",
+  "blue",
+  "yellow",
+  "purple",
+  "orange",
+  "gray",
+  "pink",
+  "brown",
+  "teal",
+  "black",
+  "navy",
+  "olive",
+  "maroon",
+  "lime",
+  "fuchsia",
+];
 
 sklDivs.forEach((div, index) => {
   div.classList.add(`skl-${index + 1}`);
   div.style.backgroundColor = colors[index % colors.length];
 });
-
-
